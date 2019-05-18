@@ -1,0 +1,19 @@
+body {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee;
+}
+
+@media only screen and (max-width: 600px), only screen and (max-height: 600px) {
+  #badge {
+    max-height: 90vh;
+    max-width: 90vw;
+  }
+}
