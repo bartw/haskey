@@ -76,7 +76,7 @@ main {
 }
 
 .page {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -108,4 +108,32 @@ footer {
   padding-bottom: 10px;
   text-align: center;
   font-size: 0.75em;
+}
+
+@media only screen and (min-width : 480px) and (max-width : 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .page {
+    width: 100%;
+  }
+
+  .header_logo {
+    height: 75px;
+  }
+}
+
+@media only screen and (max-width : 479px) {
+  body {
+    font-size: 12px;
+  }
+  
+  .page {
+    width: 100%;
+  }
+
+  .header_logo {
+    height: 30px;
+  }
 }
