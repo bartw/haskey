@@ -23,11 +23,13 @@ header {
   border-top: 4px solid #266DD3;
 }
 
+.header_left {
+  float: left;
+  padding: 0 5px;
+}
+
 .home_link {
   display: block;
-  float: left;
-  color: #353535;
-  padding-left: 5px;
 }
 
 .header_logo {
@@ -37,6 +39,26 @@ header {
 
 .header_logo_img {
   height: 100%;
+}
+
+.social_bar {
+  list-style-type: none;
+}
+
+.social_bar_item {
+  float: left;
+  font-size: 1.5em;
+  width: 25%;
+  text-align: center;
+}
+
+.social_bar_item_link {
+  display: block;
+  color: #353535;
+}
+
+.social_bar_item_link:hover {
+  color: #266DD3;
 }
 
 .header_nav {
@@ -184,6 +206,14 @@ footer {
 @media only screen and (max-width : 479px) {
   body {
     font-size: 12px;
+  }
+
+  .social_bar_item {
+    font-size: 1em;
+  }
+
+  .nav_bar_item_link {
+    padding: 11px 8px 15px 8px;
   }
   
   .page {
