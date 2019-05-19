@@ -225,6 +225,10 @@ footer {
   .social_bar_item {
     font-size: 2em;
   }
+
+  .nav_bar_item_link {
+    padding: 11px 8px 15px 8px;
+  }
   
   .page {
     width: 100%;
