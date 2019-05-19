@@ -20,7 +20,7 @@ a {
 }
 
 header {
-  border-top: 4px solid #266DD3;
+  border-top: 4px solid #266dd3;
 }
 
 .header_left {
@@ -58,17 +58,17 @@ header {
   padding: 11px 10px 15px 10px;
   display: block;
   color: #353535;
-  border-bottom: 4px solid #FFFFFF;
+  border-bottom: 4px solid #ffffff;
 }
 
-.nav_bar_item_link_active{
-  border-bottom: 4px solid #266DD3;
+.nav_bar_item_link_active {
+  border-bottom: 4px solid #266dd3;
 }
 
 .nav_bar_item_link:hover {
-  background-color: #266DD3;
+  background-color: #266dd3;
   color: hsla(0, 0%, 100%, 0.86);
-  border-bottom: 4px solid #266DD3;
+  border-bottom: 4px solid #266dd3;
 }
 
 nav {
@@ -95,11 +95,11 @@ nav {
 }
 
 .social_bar_item_link:hover {
-  color: #266DD3;
+  color: #266dd3;
 }
 
 main {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding-top: 40px;
   clear: both;
 }
@@ -109,7 +109,8 @@ main {
   margin: 0 auto;
 }
 
-.hero {
+.hero,
+.four_o_four {
   width: 60%;
   margin: 50px auto;
   text-align: center;
@@ -120,18 +121,23 @@ main {
   font-weight: bold;
 }
 
+.four_o_four h1 {
+  font-size: 4em;
+  font-weight: bold;
+}
+
 table {
   width: 100%;
 }
 
 tr {
-  border-top: 1px solid #D2D7DF;
+  border-top: 1px solid #d2d7df;
 }
 
 th {
   text-transform: uppercase;
   text-align: left;
-  background-color: #EAECF0;
+  background-color: #eaecf0;
   padding: 15px 5px;
 }
 
@@ -140,7 +146,7 @@ td {
 }
 
 tbody tr:hover {
-  background-color: #FAFBFC;
+  background-color: #fafbfc;
 }
 
 footer {
@@ -154,7 +160,7 @@ footer {
   display: inline-block;
   padding: 15px 60px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
-  background-color: #FAFBFC;
+  background-color: #fafbfc;
   margin: 10px;
 }
 
@@ -186,7 +192,7 @@ footer {
   font-weight: 300;
 }
 
-@media only screen and (min-width : 480px) and (max-width : 768px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
   body {
     font-size: 14px;
   }
@@ -199,13 +205,18 @@ footer {
     width: 100%;
   }
 
-  .hero {
+  .hero,
+  .four_o_four {
     width: 75%;
     margin: 50px auto;
   }
-  
+
   .hero h1 {
     font-size: 4em;
+  }
+
+  .four_o_four h1 {
+    font-size: 3em;
   }
 
   .header_logo {
@@ -213,7 +224,7 @@ footer {
   }
 }
 
-@media only screen and (max-width : 479px) {
+@media only screen and (max-width: 479px) {
   body {
     font-size: 12px;
   }
@@ -225,18 +236,23 @@ footer {
   .social_bar_item {
     font-size: 2em;
   }
-  
+
   .page {
     width: 100%;
   }
 
-  .hero {
+  .hero,
+  .four_o_four {
     width: 75%;
     margin: 50px auto;
   }
-  
+
   .hero h1 {
     font-size: 4em;
+  }
+
+  .four_o_four h1 {
+    font-size: 3em;
   }
 
   .header_logo {
