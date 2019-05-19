@@ -41,26 +41,6 @@ header {
   height: 100%;
 }
 
-.social_bar {
-  list-style-type: none;
-}
-
-.social_bar_item {
-  float: left;
-  font-size: 1.5em;
-  width: 25%;
-  text-align: center;
-}
-
-.social_bar_item_link {
-  display: block;
-  color: #353535;
-}
-
-.social_bar_item_link:hover {
-  color: #266DD3;
-}
-
 .header_nav {
   float: right;
 }
@@ -89,6 +69,33 @@ header {
   background-color: #266DD3;
   color: hsla(0, 0%, 100%, 0.86);
   border-bottom: 4px solid #266DD3;
+}
+
+nav {
+  padding-top: 40px;
+  clear: both;
+}
+
+.social_bar {
+  list-style-type: none;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.social_bar_item {
+  float: left;
+  font-size: 3em;
+  width: 25%;
+  text-align: center;
+}
+
+.social_bar_item_link {
+  display: block;
+  color: #353535;
+}
+
+.social_bar_item_link:hover {
+  color: #266DD3;
 }
 
 main {
@@ -185,6 +192,10 @@ footer {
     font-size: 14px;
   }
 
+  .social_bar {
+    width: 60%;
+  }
+
   .page {
     width: 100%;
   }
@@ -208,12 +219,12 @@ footer {
     font-size: 12px;
   }
 
-  .social_bar_item {
-    font-size: 1em;
+  .social_bar {
+    width: 80%;
   }
 
-  .nav_bar_item_link {
-    padding: 11px 8px 15px 8px;
+  .social_bar_item {
+    font-size: 2em;
   }
   
   .page {
