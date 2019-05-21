@@ -2,6 +2,8 @@
 
 ## TODO
 
+- domeinnaam op vzw zetten
+
 - inschrijvingen
   - starters - competitie - korting
   - proberen --> 0 euro
@@ -30,3 +32,10 @@
 - logo opkuisen --> Raf
 
 - link naar de bond
+
+- social --> veel admins
+  - facebook: limburgone --> haskey
+  - instagram: limburgone --> haskey
+  - twitter: limburgone --> haskey
+  - youtube: limburgone maken --> ijshockeyhasselt@gmail.com
+  - snapchat: limburgone maken
