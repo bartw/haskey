@@ -39,3 +39,6 @@
   - twitter: limburgone --> haskey
   - youtube: limburgone maken --> ijshockeyhasselt@gmail.com
   - snapchat: limburgone maken
+
+- haskey op github
+  - website verhuizen
