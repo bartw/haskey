@@ -156,7 +156,17 @@ footer {
   font-size: 0.75em;
 }
 
+.box_container {
+  margin-bottom: 20px; 
+}
+
+.box_container h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
 .box {
+  text-align: left;
   display: inline-block;
   padding: 15px 60px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
@@ -165,7 +175,7 @@ footer {
 }
 
 .box .title {
-  font-size: 1.5em;
+  font-size: 1.25em;
   line-height: 1.5;
 }
 
@@ -174,7 +184,7 @@ footer {
 }
 
 .box .price {
-  font-size: 4em;
+  font-size: 3em;
   line-height: 2.5;
 }
 
@@ -182,9 +192,9 @@ footer {
   color: hsla(0, 100%, 50%, 0.81);
 }
 
-.box .price .valuta {
-  font-size: 0.25em;
-  vertical-align: text-top;
+.box .price .currency {
+  font-size: 0.45em;
+  vertical-align: super;
   font-weight: 400;
 }
 
@@ -240,7 +250,7 @@ footer {
   .nav_bar_item_link {
     padding: 11px 8px 15px 8px;
   }
-  
+
   .page {
     width: 100%;
   }
