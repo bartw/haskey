@@ -1,0 +1,36 @@
+{
+  "name": "haskey",
+  "private": true,
+  "description": "Website of Haskey Hasselt",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.18",
+    "@fortawesome/free-brands-svg-icons": "^5.8.2",
+    "@fortawesome/free-solid-svg-icons": "^5.8.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "gatsby": "^2.5.5",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "prettier": "^1.17.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bartw/haskey"
+  },
+  "bugs": {
+    "url": "https://github.com/bartw/haskey/issues"
+  }
+}
