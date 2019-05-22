@@ -30,12 +30,12 @@ const Layout = ({ children }) => (
             </Link>
           </li>
           <li className="nav_bar_item">
-            <Link to="/trainingen" className="nav_bar_item_link" activeClassName="nav_bar_item_link_active">
+            <Link to="/trainingen/" className="nav_bar_item_link" activeClassName="nav_bar_item_link_active">
               TRAININGEN
             </Link>
           </li>
           <li className="nav_bar_item">
-            <Link to="/inschrijvingen" className="nav_bar_item_link" activeClassName="nav_bar_item_link_active">
+            <Link to="/inschrijvingen/" className="nav_bar_item_link" activeClassName="nav_bar_item_link_active">
               INSCHRIJVEN
             </Link>
           </li>
