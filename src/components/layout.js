@@ -8,6 +8,7 @@ import {
   faSnapchat,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import logo from "../haskey.svg"
 import "./reset.css";
 import "./layout.css";
 
@@ -17,7 +18,7 @@ const Layout = ({ children }) => (
       <div className="header_left">
         <Link to="/" className="home_link">
           <div className="header_logo">
-            <img src="haskey.svg" alt="logo" className="header_logo_img" />
+            <img src={logo} alt="logo" className="header_logo_img" />
           </div>
         </Link>
       </div>
