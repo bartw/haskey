@@ -8,7 +8,9 @@ import {
   faSnapchat,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import logo from "../haskey.svg"
+import NavBar from "./nav-bar";
+import Hamburger from "./hamburger";
+import logo from "../haskey.svg";
 import "./reset.css";
 import "./layout.css";
 
@@ -23,28 +25,12 @@ const Layout = ({ children }) => (
         </Link>
       </div>
       <div className="header_nav">
-        <ul className="nav_bar">
-          <li className="nav_bar_item">
-            <Link to="/" className="nav_bar_item_link" activeClassName="nav_bar_item_link_active">
-              HOME
-            </Link>
-          </li>
-          <li className="nav_bar_item">
-            <Link to="/trainingen/" className="nav_bar_item_link" activeClassName="nav_bar_item_link_active">
-              TRAININGEN
-            </Link>
-          </li>
-          <li className="nav_bar_item">
-            <Link to="/proberen/" className="nav_bar_item_link" activeClassName="nav_bar_item_link_active">
-              PROBEREN
-            </Link>
-          </li>
-          <li className="nav_bar_item">
-            <Link to="/inschrijvingen/" className="nav_bar_item_link" activeClassName="nav_bar_item_link_active">
-              INSCHRIJVEN
-            </Link>
-          </li>
-        </ul>
+        <div className="desktop_only">
+          <NavBar />
+        </div>
+        <div className="mobile_only">
+          <Hamburger><NavBar /></Hamburger>
+        </div>
       </div>
     </header>
     <nav>
