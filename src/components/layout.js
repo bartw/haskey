@@ -35,6 +35,11 @@ const Layout = ({ children }) => (
             </Link>
           </li>
           <li className="nav_bar_item">
+            <Link to="/proberen/" className="nav_bar_item_link" activeClassName="nav_bar_item_link_active">
+              PROBEREN
+            </Link>
+          </li>
+          <li className="nav_bar_item">
             <Link to="/inschrijvingen/" className="nav_bar_item_link" activeClassName="nav_bar_item_link_active">
               INSCHRIJVEN
             </Link>
