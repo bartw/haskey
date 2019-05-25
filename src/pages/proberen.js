@@ -45,7 +45,7 @@ export default () => (
       </p>
     </div>
     <div className="content_container">
-      <h1>Waar</h1>
+      <h1>Waar?</h1>
       <p>Sport Vlaanderen Hasselt</p>
       <p>Gouverneur Verwilghensingel 13</p>
       <p>3500 Hasselt</p>
