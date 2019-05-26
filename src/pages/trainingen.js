@@ -1,6 +1,8 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import ContentPage from "../components/content-page";
+import Content from "../components/content";
 
 const teams = [
   { team: "Rookies", sunday: "08:30 - 09:30" },
@@ -41,21 +43,25 @@ export default () => {
   return (
     <Layout>
       <SEO title="Trainingen" />
-      <table>
-        <thead>
-          <tr>
-            <th style={{ width: "16%" }}>Team</th>
-            <th style={{ width: "13%" }}>Ma</th>
-            <th style={{ width: "13%" }}>Di</th>
-            <th style={{ width: "13%" }}>Wo</th>
-            <th style={{ width: "13%" }}>Do</th>
-            <th style={{ width: "7%" }}>Vr</th>
-            <th style={{ width: "7%" }}>Za</th>
-            <th style={{ width: "13%" }}>Zo</th>
-          </tr>
-        </thead>
-        <tbody>{rows}</tbody>
-      </table>
+      <ContentPage title="Trainingen">
+        <Content>
+          <table>
+            <thead>
+              <tr>
+                <th style={{ width: "16%" }}>Team</th>
+                <th style={{ width: "13%" }}>Ma</th>
+                <th style={{ width: "13%" }}>Di</th>
+                <th style={{ width: "13%" }}>Wo</th>
+                <th style={{ width: "13%" }}>Do</th>
+                <th style={{ width: "7%" }}>Vr</th>
+                <th style={{ width: "7%" }}>Za</th>
+                <th style={{ width: "13%" }}>Zo</th>
+              </tr>
+            </thead>
+            <tbody>{rows}</tbody>
+          </table>
+        </Content>
+      </ContentPage>
     </Layout>
   );
 };

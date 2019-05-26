@@ -156,71 +156,6 @@ footer {
   font-size: 0.75em;
 }
 
-.box_container {
-  margin-bottom: 20px;
-}
-
-.box_container h1 {
-  font-size: 2em;
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-
-.content_container {
-  margin: 0 10px 20px 10px;
-}
-
-.content_container h1 {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-.content_container p {
-  line-height: 1.25em;
-}
-
-.content_container li {
-  display: flex;
-  line-height: 1.25em;
-}
-
-.list_item_icon {
-  margin-right: 5px;
-}
-
-.box {
-  text-align: left;
-  display: inline-block;
-  padding: 15px 60px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
-  background-color: #fafbfc;
-  margin: 10px;
-}
-
-.box .title {
-  font-size: 1.25em;
-  line-height: 1.5;
-}
-
-.box .subtitle {
-  line-height: 1.5;
-}
-
-.box .price {
-  font-size: 3em;
-  line-height: 2.5;
-}
-
-.box .price .discount {
-  color: hsla(0, 100%, 50%, 0.81);
-}
-
-.box .price .currency {
-  font-size: 0.45em;
-  vertical-align: super;
-  font-weight: 400;
-}
-
 .mail_link {
   color: #266dd3;
 }
@@ -231,10 +166,6 @@ footer {
 
 .mail_link:hover {
   color: #242038;
-}
-
-.box .price .value {
-  font-weight: 300;
 }
 
 .mobile_only {
@@ -379,10 +310,6 @@ footer {
 
   .header_logo {
     height: 50px;
-  }
-
-  .box_container {
-    text-align: center;
   }
 
   .desktop_only {

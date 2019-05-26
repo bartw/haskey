@@ -32,7 +32,7 @@ const NavBar = () => (
     </li>
     <li className="nav_bar_item">
       <Link
-        to="/inschrijvingen/"
+        to="/inschrijven/"
         className="nav_bar_item_link"
         activeClassName="nav_bar_item_link_active"
       >
