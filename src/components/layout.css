@@ -98,17 +98,6 @@ nav {
   color: #266dd3;
 }
 
-main {
-  background-color: #ffffff;
-  padding-top: 40px;
-  clear: both;
-}
-
-.page {
-  width: 90%;
-  margin: 0 auto;
-}
-
 .hero,
 .four_o_four {
   width: 60%;
@@ -147,13 +136,6 @@ td {
 
 tbody tr:hover {
   background-color: #fafbfc;
-}
-
-footer {
-  padding-top: 40px;
-  padding-bottom: 10px;
-  text-align: center;
-  font-size: 0.75em;
 }
 
 .mail_link {
@@ -242,10 +224,6 @@ footer {
     width: 60%;
   }
 
-  .page {
-    width: 100%;
-  }
-
   .hero,
   .four_o_four {
     width: 75%;
@@ -288,10 +266,6 @@ footer {
 
   .nav_bar_item_link {
     padding: 11px 8px 15px 8px;
-  }
-
-  .page {
-    width: 100%;
   }
 
   .hero,
