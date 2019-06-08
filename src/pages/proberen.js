@@ -19,6 +19,7 @@ const ListItem = ({ children }) => (
         marginRight: "5px",
       }}
       icon={faCheck}
+      fixedWidth
     />
     <span>{children}</span>
   </li>

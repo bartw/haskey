@@ -12,22 +12,22 @@ const SocialBar = () => (
     <ul className="social_bar">
       <li className="social_bar_item">
         <a className="social_bar_item_link" href="/">
-          <FontAwesomeIcon icon={faFacebook} />
+          <FontAwesomeIcon icon={faFacebook} fixedWidth />
         </a>
       </li>
       <li className="social_bar_item">
         <a className="social_bar_item_link" href="/">
-          <FontAwesomeIcon icon={faInstagram} />
+          <FontAwesomeIcon icon={faInstagram} fixedWidth />
         </a>
       </li>
       <li className="social_bar_item">
         <a className="social_bar_item_link" href="/">
-          <FontAwesomeIcon icon={faSnapchat} />
+          <FontAwesomeIcon icon={faSnapchat} fixedWidth />
         </a>
       </li>
       <li className="social_bar_item">
         <a className="social_bar_item_link" href="/">
-          <FontAwesomeIcon icon={faTwitter} />
+          <FontAwesomeIcon icon={faTwitter} fixedWidth />
         </a>
       </li>
     </ul>

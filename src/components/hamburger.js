@@ -9,12 +9,12 @@ const Hamburger = ({ children }) => (
       className="hamburger_bars"
       style={{ fontSize: "3em", padding: "10px" }}
     >
-      <FontAwesomeIcon icon={faBars} />
+      <FontAwesomeIcon icon={faBars} fixedWidth />
     </div>
     <div className="hamburger_menu">
       <div className="hamburger_menu_visible">
         <div style={{ fontSize: "3em", padding: "10px" }}>
-          <FontAwesomeIcon icon={faTimes} />
+          <FontAwesomeIcon icon={faTimes} fixedWidth />
         </div>
         <div>{children}</div>
       </div>

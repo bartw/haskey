@@ -189,6 +189,11 @@ tbody tr:hover {
 .hamburger_menu_visible {
   float: right;
   background-color: white;
+  height: 100%;
+}
+
+.hamburger_menu .nav_bar {
+  text-align: left;
 }
 
 .hamburger_menu .nav_bar_item {
@@ -197,7 +202,7 @@ tbody tr:hover {
 
 .hamburger_menu .nav_bar_item_link {
   line-height: 20px;
-  padding: 20px 10px 20px 40px;
+  padding: 20px 80px 20px 10px;
   display: block;
   color: #353535;
   border: none;
