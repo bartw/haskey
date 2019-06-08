@@ -19,6 +19,8 @@ export default () => (
         <PriceBox title="2007 - 2006" subtitle="U14" value={520} />
         <PriceBox title="2005 - 2004" subtitle="U16" value={550} />
         <PriceBox title="Divisie 2" value={610} />
+      </Content>
+      <Content title="Recreatief">
         <PriceBox title="Dinoz" value={485} />
       </Content>
       <Content title="Kortingen">
