@@ -4,5 +4,5 @@ module.exports = {
     description: `Haskey Hasselt`,
     author: `Bart Wijnants`,
   },
-  plugins: [`gatsby-plugin-react-helmet`],
+  plugins: [`gatsby-plugin-react-helmet`, `gatsby-plugin-styled-components`],
 };
