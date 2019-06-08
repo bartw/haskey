@@ -1,36 +1,37 @@
 import React from "react";
+import styled from "styled-components";
 
-const style = {
-  fontSize: "2em",
-  lineHeight: "2.5em",
-};
+const StyledDiv = styled.div`
+  font-size: 2em;
+  line-height: 2.5em;
+`;
 
-const valueStyle = {
-  fontWeight: 300,
-};
+const Discount = styled.span`
+  color: hsla(0, 100%, 50%, 0.81);
+`;
 
-const discountStyle = {
-  color: "hsla(0, 100%, 50%, 0.81)",
-};
+const Value = styled.span`
+  font-weight: 300;
+`;
 
-const currencyStyle = {
-  fontSize: "0.45em",
-  verticalAlign: "super",
-  fontWeight: 400,
-};
+const Currency = styled.span`
+  font-size: 0.45em;
+  vertical-align: super;
+  font-weight: 400;
+`;
 
 const Free = () => (
-  <div style={style}>
-    <span style={valueStyle}>Gratis</span>
-  </div>
+  <StyledDiv>
+    <Value>Gratis</Value>
+  </StyledDiv>
 );
 
 const Price = ({ value }) => (
-  <div style={style}>
-    {value < 0 && <span style={discountStyle}>-</span>}
-    <span style={currencyStyle}>€</span>
-    <span style={valueStyle}>{Math.abs(value)}</span>
-  </div>
+  <StyledDiv>
+    {value < 0 && <Discount>-</Discount>}
+    <Currency>€</Currency>
+    <Value>{Math.abs(value)}</Value>
+  </StyledDiv>
 );
 
 export default ({ value }) =>

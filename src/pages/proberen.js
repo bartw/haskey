@@ -6,23 +6,18 @@ import SEO from "../components/seo";
 import ContentPage from "../components/content-page";
 import Content from "../components/content";
 import MailLink from "../components/mail-link";
+import styled from "styled-components";
+
+const StyledListItem = styled.li`
+  display: flex;
+  line-height: 1.25em;
+`;
 
 const ListItem = ({ children }) => (
-  <li
-    style={{
-      display: "flex",
-      lineHeight: "1.25em",
-    }}
-  >
-    <FontAwesomeIcon
-      style={{
-        marginRight: "5px",
-      }}
-      icon={faCheck}
-      fixedWidth
-    />
+  <StyledListItem>
+    <FontAwesomeIcon icon={faCheck} fixedWidth />
     <span>{children}</span>
-  </li>
+  </StyledListItem>
 );
 
 export default () => (

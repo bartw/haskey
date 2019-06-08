@@ -1,12 +1,11 @@
 import React from "react";
+import styled from "styled-components";
 
-const style = {
-  paddingTop: "40px",
-  paddingBottom: "10px",
-  textAlign: "center",
-  fontSize: "0.75em",
-};
+const Footer = styled.footer`
+  padding-top: 40px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 0.75em;
+`;
 
-const Footer = () => <footer style={style}>© 2019 Haskey</footer>;
-
-export default Footer;
+export default () => <Footer>© 2019 Haskey</Footer>;

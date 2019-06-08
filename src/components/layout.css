@@ -98,23 +98,6 @@ nav {
   color: #266dd3;
 }
 
-.hero,
-.four_o_four {
-  width: 60%;
-  margin: 50px auto;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 6em;
-  font-weight: bold;
-}
-
-.four_o_four h1 {
-  font-size: 4em;
-  font-weight: bold;
-}
-
 table {
   width: 100%;
 }
@@ -229,20 +212,6 @@ tbody tr:hover {
     width: 60%;
   }
 
-  .hero,
-  .four_o_four {
-    width: 75%;
-    margin: 50px auto;
-  }
-
-  .hero h1 {
-    font-size: 4em;
-  }
-
-  .four_o_four h1 {
-    font-size: 3em;
-  }
-
   .header_logo {
     height: 75px;
   }
@@ -275,20 +244,6 @@ tbody tr:hover {
 
   .nav_bar_item_link {
     padding: 11px 8px 15px 8px;
-  }
-
-  .hero,
-  .four_o_four {
-    width: 75%;
-    margin: 50px auto;
-  }
-
-  .hero h1 {
-    font-size: 4em;
-  }
-
-  .four_o_four h1 {
-    font-size: 3em;
   }
 
   .header_logo {
