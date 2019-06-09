@@ -5,9 +5,10 @@ import NavBar from "./nav-bar";
 import Hamburger from "./hamburger";
 import media from "./media";
 import logo from "../haskey.svg";
+import { colors } from "./global-style";
 
 const Header = styled.header`
-  border-top: 4px solid #266dd3;
+  border-top: 4px solid ${colors.primary};
 `;
 
 const Left = styled.div`

@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
+import { colors } from "./global-style";
 
 const Icon = styled.div`
   font-size: 3em;
@@ -16,7 +17,7 @@ const MenuContainer = styled.div`
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.25);
-  border-top: 4px solid #266dd3;
+  border-top: 4px solid ${colors.primary};
 `;
 
 const Menu = styled.div`

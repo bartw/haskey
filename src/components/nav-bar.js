@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import media from "./media";
+import { colors } from "./global-style";
 
 const NavBar = styled.ul`
   list-style-type: none;
@@ -34,17 +35,17 @@ const VerticalNavLink = styled(Link)`
   line-height: 20px;
   padding: 20px 80px 20px 10px;
   display: block;
-  color: #353535;
+  color: ${colors.text};
   border: none;
 
   &.active {
-    background-color: #266dd3;
+    background-color: ${colors.primary};
     color: hsla(0, 0%, 100%, 0.86);
     border: none;
   }
 
   :hover {
-    color: #353535;
+    color: ${colors.text};
     background-color: white;
     border: none;
   }
@@ -54,19 +55,19 @@ const HorizontalNavLink = styled(Link)`
   line-height: 20px;
   padding: 11px 10px 15px 10px;
   display: block;
-  color: #353535;
-  border-bottom: 4px solid #ffffff;
+  color: ${colors.text};
+  border-bottom: 4px solid ${colors.background};
 
   ${media.phone`padding: 11px 8px 15px 8px;`}
 
   &.active {
-    border-bottom: 4px solid #266dd3;
+    border-bottom: 4px solid ${colors.primary};
   }
 
   :hover {
-    background-color: #266dd3;
+    background-color: ${colors.primary};
     color: hsla(0, 0%, 100%, 0.86);
-    border-bottom: 4px solid #266dd3;
+    border-bottom: 4px solid ${colors.primary};
   }
 `;
 

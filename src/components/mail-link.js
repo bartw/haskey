@@ -1,20 +1,19 @@
 import React from "react";
 import styled from "styled-components";
+import { colors } from "./global-style";
 
 const MailLink = styled.a`
-  color: #266dd3;
+  color: ${colors.primary};
 
   :visited {
-    color: #266dd3;
+    color: ${colors.primary};
   }
 
   :hover {
-    color: #242038;
+    color: ${colors.text};
   }
 `;
 
 export default ({ mail }) => (
-  <MailLink href={`mailto:${mail}`}>
-    {mail}
-  </MailLink>
+  <MailLink href={`mailto:${mail}`}>{mail}</MailLink>
 );

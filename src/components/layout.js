@@ -6,9 +6,10 @@ import Header from "./header";
 import SocialBar from "./social-bar";
 import Footer from "./footer";
 import media from "./media";
+import { colors } from "./global-style";
 
 const Main = styled.main`
-  background-color: #ffffff;
+  background-color: ${colors.background};
   padding-top: 40px;
   clear: both;
   margin: 0 auto;

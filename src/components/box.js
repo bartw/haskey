@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import media from "./media";
+import { colors } from "./global-style";
 
 const BoxContainer = styled.div`
   display: inline-block;
@@ -16,7 +17,7 @@ const Box = styled.div`
   text-align: left;
   padding: 15px 60px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
-  background-color: #fafbfc;
+  background-color: ${colors.veryLightGray};
 `;
 
 const Title = styled.h1`

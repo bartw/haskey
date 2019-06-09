@@ -2,16 +2,14 @@ import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 import media from "./media";
 
-/*
-light blue: 266DD3
-dark blue: 242038
-light blue: E7F0FF
-
-very light gray: FAFBFC
-light gray: EAECF0
-medium light gray: D2D7DF
-very dark gray: 353535
-*/
+export const colors = {
+  primary: "#266DD3",
+  text: "#353535",
+  gray: "#EAECF0",
+  lightGray: "#D2D7DF",
+  veryLightGray: "#FAFBFC",
+  background: "#FFFFFF"
+};
 
 export default createGlobalStyle`
   ${reset}
@@ -19,7 +17,7 @@ export default createGlobalStyle`
   body {
     font-family: sans-serif;
     font-size: 16px;
-    color: #353535;
+    color: ${colors.text};
 
     ${media.tablet`font-size: 14px;`}
     ${media.phone`font-size: 12px;`}

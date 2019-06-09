@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import media from "../media";
+import { colors } from "../global-style";
 
 const Item = styled.li`
   float: left;
@@ -14,10 +15,10 @@ const Item = styled.li`
 
 const Link = styled.a`
   display: block;
-  color: #353535;
+  color: ${colors.text};
 
   :hover {
-    color: #266dd3;
+    color: ${colors.primary};
   }
 `;
 

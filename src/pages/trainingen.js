@@ -5,6 +5,7 @@ import SEO from "../components/seo";
 import ContentPage from "../components/content-page";
 import Content from "../components/content";
 import media from "../components/media";
+import { colors } from "../components/global-style";
 
 const Table = styled.table`
   width: 100%;
@@ -13,17 +14,17 @@ const Table = styled.table`
 const Header = styled.th`
   text-transform: uppercase;
   text-align: left;
-  background-color: #eaecf0;
+  background-color: ${colors.gray};
   padding: 15px 5px;
 `;
 
 const Row = styled.tr`
-  border-top: 1px solid #d2d7df;
+  border-top: 1px solid ${colors.lightGray};
 `;
 
 const HoverRow = styled(Row)`
   :hover {
-    background-color: #fafbfc;
+    background-color: ${colors.veryLightGray};
   }
 `;
 
