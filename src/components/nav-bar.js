@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
-import media from "../components/media";
+import media from "./media";
 
 const NavBar = styled.ul`
   list-style-type: none;
