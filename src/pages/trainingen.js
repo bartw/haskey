@@ -1,8 +1,37 @@
 import React from "react";
+import styled from "styled-components";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ContentPage from "../components/content-page";
 import Content from "../components/content";
+import media from "../components/media";
+
+const Table = styled.table`
+  width: 100%;
+`;
+
+const Header = styled.th`
+  text-transform: uppercase;
+  text-align: left;
+  background-color: #eaecf0;
+  padding: 15px 5px;
+`;
+
+const Row = styled.tr`
+  border-top: 1px solid #d2d7df;
+`;
+
+const HoverRow = styled(Row)`
+  :hover {
+    background-color: #fafbfc;
+  }
+`;
+
+const Cell = styled.td`
+  padding: 15px 5px;
+
+  ${media.phone`font-size: 0.9em;`}
+`;
 
 const teams = [
   { team: "Rookies", sunday: "08:30 - 09:30" },
@@ -28,16 +57,16 @@ export default () => {
       saturday,
       sunday,
     }) => (
-      <tr key={team}>
-        <td>{team}</td>
-        <td>{monday}</td>
-        <td>{tuesday}</td>
-        <td>{wednesday}</td>
-        <td>{thursday}</td>
-        <td>{friday}</td>
-        <td>{saturday}</td>
-        <td>{sunday}</td>
-      </tr>
+      <HoverRow key={team}>
+        <Cell>{team}</Cell>
+        <Cell>{monday}</Cell>
+        <Cell>{tuesday}</Cell>
+        <Cell>{wednesday}</Cell>
+        <Cell>{thursday}</Cell>
+        <Cell>{friday}</Cell>
+        <Cell>{saturday}</Cell>
+        <Cell>{sunday}</Cell>
+      </HoverRow>
     )
   );
   return (
@@ -45,21 +74,21 @@ export default () => {
       <SEO title="Trainingen" />
       <ContentPage title="Trainingen">
         <Content>
-          <table>
+          <Table>
             <thead>
-              <tr>
-                <th style={{ width: "16%" }}>Team</th>
-                <th style={{ width: "13%" }}>Ma</th>
-                <th style={{ width: "13%" }}>Di</th>
-                <th style={{ width: "13%" }}>Wo</th>
-                <th style={{ width: "13%" }}>Do</th>
-                <th style={{ width: "7%" }}>Vr</th>
-                <th style={{ width: "7%" }}>Za</th>
-                <th style={{ width: "13%" }}>Zo</th>
-              </tr>
+              <Row>
+                <Header style={{ width: "16%" }}>Team</Header>
+                <Header style={{ width: "13%" }}>Ma</Header>
+                <Header style={{ width: "13%" }}>Di</Header>
+                <Header style={{ width: "13%" }}>Wo</Header>
+                <Header style={{ width: "13%" }}>Do</Header>
+                <Header style={{ width: "7%" }}>Vr</Header>
+                <Header style={{ width: "7%" }}>Za</Header>
+                <Header style={{ width: "13%" }}>Zo</Header>
+              </Row>
             </thead>
             <tbody>{rows}</tbody>
-          </table>
+          </Table>
         </Content>
       </ContentPage>
     </Layout>

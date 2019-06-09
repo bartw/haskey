@@ -45,29 +45,6 @@ a {
   border-bottom: 4px solid #266dd3;
 }
 
-table {
-  width: 100%;
-}
-
-tr {
-  border-top: 1px solid #d2d7df;
-}
-
-th {
-  text-transform: uppercase;
-  text-align: left;
-  background-color: #eaecf0;
-  padding: 15px 5px;
-}
-
-td {
-  padding: 15px 5px;
-}
-
-tbody tr:hover {
-  background-color: #fafbfc;
-}
-
 .hamburger_toggle {
   cursor: pointer;
 }
@@ -143,10 +120,6 @@ tbody tr:hover {
 @media only screen and (max-width: 479px) {
   body {
     font-size: 12px;
-  }
-
-  td {
-    font-size: 0.9em;
   }
 
   .nav_bar_item_link {
