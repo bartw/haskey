@@ -1,35 +1,29 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
 import Header from "./header";
 import SocialBar from "./social-bar";
 import Footer from "./footer";
+import media from "./media";
 import "./reset.css";
 import "./layout.css";
 
-const style = {
-  backgroundColor: "#ffffff",
-  paddingTop: "40px",
-  clear: "both",
-  margin: "0 auto",
-};
+const Main = styled.main`
+  background-color: #ffffff;
+  padding-top: 40px;
+  clear: both;
+  margin: 0 auto;
+  width: 90%;
+
+  ${media.tablet`width: 100%;`}
+  ${media.phone`width: 100%;`}
+`;
 
 const Layout = ({ children }) => (
   <>
-    <style scoped>
-      {`
-    main {
-      width: 90%;
-    }
-    @media only screen and (max-width: 768px) {
-      main {
-        width: 100%;
-      }
-    }
-      `}
-    </style>
     <Header />
     <SocialBar />
-    <main style={style}>{children}</main>
+    <Main>{children}</Main>
     <Footer />
   </>
 );

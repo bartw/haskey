@@ -1,44 +1,40 @@
 import React from "react";
+import styled from "styled-components";
+import media from "../components/media";
 
-const style = {
-  textAlign: "left",
-  padding: "15px 60px",
-  boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.18)",
-  backgroundColor: "#fafbfc",
-};
+const BoxContainer = styled.div`
+  display: inline-block;
+  margin: 10px 20px 10px 0;
 
-const titleStyle = {
-  fontSize: "1.25em",
-  lineHeight: "1.5em",
-};
+  ${media.phone`
+    display: block;
+    margin: 10px 0;
+  `}
+`;
 
-const subtitleStyle = {
-  fontSize: "1em",
-  lineHeight: "1.25em",
-};
+const Box = styled.div`
+  text-align: left;
+  padding: 15px 60px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+  background-color: #fafbfc;
+`;
+
+const Title = styled.h1`
+  font-size: 1.25em;
+  line-height: 1.5em;
+`;
+
+const Subtitle = styled.h2`
+  font-size: 1em;
+  line-height: 1.25em;
+`;
 
 export default ({ title, subtitle, children }) => (
-  <>
-    <style scoped>
-      {`
-    .box_container {
-      display: inline-block;
-      margin: 10px 20px 10px 0;
-    }
-    @media only screen and (max-width: 479px) {
-      .box_container {
-        display: block;
-        margin: 10px 0;
-      }
-    }
-      `}
-    </style>
-    <div className="box_container">
-      <div style={style}>
-        <h1 style={titleStyle}>{title}</h1>
-        <h2 style={subtitleStyle}>{subtitle || <span>&nbsp;</span>}</h2>
-        {children}
-      </div>
-    </div>
-  </>
+  <BoxContainer>
+    <Box>
+      <Title>{title}</Title>
+      <Subtitle>{subtitle || <span>&nbsp;</span>}</Subtitle>
+      {children}
+    </Box>
+  </BoxContainer>
 );

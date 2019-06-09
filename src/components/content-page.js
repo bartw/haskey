@@ -1,19 +1,18 @@
 import React from "react";
-import ContentPageTitle from './content-page-title';
+import styled from "styled-components";
+import ContentPageTitle from "./content-page-title";
 
-const style = {
-  margin: "0 10px",
-};
+const ContentPage = styled.div`
+  margin: 0 10px;
+`;
 
-const contentStyle = {
-  marginTop: "10px",
-};
+const Content = styled.div`
+  margin-top: 10px;
+`;
 
-const ContentPage = ({ children, title }) => (
-  <div style={style}>
+export default ({ children, title }) => (
+  <ContentPage>
     <ContentPageTitle>{title}</ContentPageTitle>
-    <div style={contentStyle}>{children}</div>
-  </div>
+    <Content>{children}</Content>
+  </ContentPage>
 );
-
-export default ContentPage;

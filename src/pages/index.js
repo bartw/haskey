@@ -1,9 +1,9 @@
 import React from "react";
+import styled from "styled-components";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Hero from "../components/hero";
 import media from "../components/media";
-import styled from "styled-components";
 
 const Header = styled.h1`
   font-size: 6em;

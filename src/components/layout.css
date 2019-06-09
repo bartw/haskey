@@ -71,33 +71,6 @@ header {
   border-bottom: 4px solid #266dd3;
 }
 
-nav {
-  padding-top: 40px;
-  clear: both;
-}
-
-.social_bar {
-  list-style-type: none;
-  width: 40%;
-  margin: 0 auto;
-}
-
-.social_bar_item {
-  float: left;
-  font-size: 3em;
-  width: 25%;
-  text-align: center;
-}
-
-.social_bar_item_link {
-  display: block;
-  color: #353535;
-}
-
-.social_bar_item_link:hover {
-  color: #266dd3;
-}
-
 table {
   width: 100%;
 }
@@ -119,18 +92,6 @@ td {
 
 tbody tr:hover {
   background-color: #fafbfc;
-}
-
-.mail_link {
-  color: #266dd3;
-}
-
-.mail_link:visited {
-  color: #266dd3;
-}
-
-.mail_link:hover {
-  color: #242038;
 }
 
 .mobile_only {
@@ -208,10 +169,6 @@ tbody tr:hover {
     font-size: 14px;
   }
 
-  .social_bar {
-    width: 60%;
-  }
-
   .header_logo {
     height: 75px;
   }
@@ -232,14 +189,6 @@ tbody tr:hover {
 
   td {
     font-size: 0.9em;
-  }
-
-  .social_bar {
-    width: 80%;
-  }
-
-  .social_bar_item {
-    font-size: 2em;
   }
 
   .nav_bar_item_link {

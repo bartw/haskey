@@ -1,20 +1,20 @@
 import React from "react";
 import styled from "styled-components";
+import media from "../components/media";
 
 const Hero = styled.div`
   width: 60%;
   margin: 50px auto;
   text-align: center;
 
-  @media only screen and (min-width: 480px) and (max-width: 768px) {
+  ${media.tablet`
     width: 75%;
     margin: 50px auto;
-  }
-
-  @media only screen and (max-width: 479px) {
+  `}
+  ${media.phone`
     width: 75%;
     margin: 50px auto;
-  }
+  `}
 `;
 
 export default ({ children }) => <Hero>{children}</Hero>;
