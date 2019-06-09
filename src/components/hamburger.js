@@ -1,23 +1,58 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import styled from "styled-components";
 
+const Icon = styled.div`
+  font-size: 3em;
+  padding: 10px;
+`;
+
+const MenuContainer = styled.div`
+  position: fixed;
+  right: 0;
+  top: 0;
+  text-align: right;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-top: 4px solid #266dd3;
+`;
+
+const Menu = styled.div`
+  float: right;
+  background-color: white;
+  height: 100%;
+`;
+
+const Toggle = styled.label`
+  cursor: pointer;
+
+  & input ~ ${MenuContainer} {
+    display: none;
+  }
+
+  & input:checked ~ ${Icon} {
+    display: none;
+  }
+
+  & input:checked ~ ${MenuContainer} {
+    display: block;
+  }
+`;
 export default ({ children }) => (
-  <label className="hamburger_toggle">
+  <Toggle>
     <input type="checkbox" style={{ display: "none" }} />
-    <div
-      className="hamburger_bars"
-      style={{ fontSize: "3em", padding: "10px" }}
-    >
+    <Icon>
       <FontAwesomeIcon icon={faBars} fixedWidth />
-    </div>
-    <div className="hamburger_menu">
-      <div className="hamburger_menu_visible">
-        <div style={{ fontSize: "3em", padding: "10px" }}>
+    </Icon>
+    <MenuContainer>
+      <Menu>
+        <Icon>
           <FontAwesomeIcon icon={faTimes} fixedWidth />
-        </div>
+        </Icon>
         <div>{children}</div>
-      </div>
-    </div>
-  </label>
+      </Menu>
+    </MenuContainer>
+  </Toggle>
 );

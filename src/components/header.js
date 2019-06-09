@@ -62,7 +62,7 @@ export default () => (
       </DesktopOnly>
       <MobileOnly>
         <Hamburger>
-          <NavBar />
+          <NavBar vertical />
         </Hamburger>
       </MobileOnly>
     </Nav>

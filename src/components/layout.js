@@ -1,12 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import GlobalStyle from "./global-style";
 import Header from "./header";
 import SocialBar from "./social-bar";
 import Footer from "./footer";
 import media from "./media";
-import "./reset.css";
-import "./layout.css";
 
 const Main = styled.main`
   background-color: #ffffff;
@@ -21,6 +20,7 @@ const Main = styled.main`
 
 const Layout = ({ children }) => (
   <>
+    <GlobalStyle />
     <Header />
     <SocialBar />
     <Main>{children}</Main>
