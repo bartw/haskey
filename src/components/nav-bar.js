@@ -70,27 +70,19 @@ const HorizontalNavLink = styled(Link)`
   }
 `;
 
+const NavBarItem = ({ vertical, to, label }) => (
+  <Item vertical={vertical}>
+    <NavLink vertical={vertical} to={to} activeClassName="active">
+      {label}
+    </NavLink>
+  </Item>
+);
+
 export default ({ vertical }) => (
   <NavBar>
-    <Item vertical={vertical}>
-      <NavLink vertical={vertical} to="/" activeClassName="active">
-        HOME
-      </NavLink>
-    </Item>
-    <Item vertical={vertical}>
-      <NavLink vertical={vertical} to="/trainingen/" activeClassName="active">
-        TRAININGEN
-      </NavLink>
-    </Item>
-    <Item vertical={vertical}>
-      <NavLink vertical={vertical} to="/proberen/" activeClassName="active">
-        PROBEREN
-      </NavLink>
-    </Item>
-    <Item vertical={vertical}>
-      <NavLink vertical={vertical} to="/inschrijven/" activeClassName="active">
-        INSCHRIJVEN
-      </NavLink>
-    </Item>
+    <NavBarItem vertical={vertical} to="/" label="HOME" />
+    <NavBarItem vertical={vertical} to="/trainingen/" label="TRAININGEN" />
+    <NavBarItem vertical={vertical} to="/proberen/" label="PROBEREN" />
+    <NavBarItem vertical={vertical} to="/inschrijven/" label="INSCHRIJVEN" />
   </NavBar>
 );
