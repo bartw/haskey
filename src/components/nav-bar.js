@@ -23,11 +23,11 @@ const HorizontalItem = styled.li`
   float: left;
 `;
 
-const NavLink = props =>
-  props.vertical ? (
-    <VerticalNavLink {...props}>{props.children}</VerticalNavLink>
+const NavLink = ({ vertical, children, ...props }) =>
+  vertical ? (
+    <VerticalNavLink {...props}>{children}</VerticalNavLink>
   ) : (
-    <HorizontalNavLink {...props}>{props.children}</HorizontalNavLink>
+    <HorizontalNavLink {...props}>{children}</HorizontalNavLink>
   );
 
 const VerticalNavLink = styled(Link)`
@@ -36,8 +36,6 @@ const VerticalNavLink = styled(Link)`
   display: block;
   color: #353535;
   border: none;
-
-  ${media.phone`padding: 11px 8px 15px 8px;`}
 
   &.active {
     background-color: #266dd3;
@@ -75,38 +73,22 @@ const HorizontalNavLink = styled(Link)`
 export default ({ vertical }) => (
   <NavBar>
     <Item vertical={vertical}>
-      <NavLink
-        vertical={vertical}
-        to="/"
-        activeClassName="active"
-      >
+      <NavLink vertical={vertical} to="/" activeClassName="active">
         HOME
       </NavLink>
     </Item>
     <Item vertical={vertical}>
-      <NavLink
-        vertical={vertical}
-        to="/trainingen/"
-        activeClassName="active"
-      >
+      <NavLink vertical={vertical} to="/trainingen/" activeClassName="active">
         TRAININGEN
       </NavLink>
     </Item>
     <Item vertical={vertical}>
-      <NavLink
-        vertical={vertical}
-        to="/proberen/"
-        activeClassName="active"
-      >
+      <NavLink vertical={vertical} to="/proberen/" activeClassName="active">
         PROBEREN
       </NavLink>
     </Item>
     <Item vertical={vertical}>
-      <NavLink
-        vertical={vertical}
-        to="/inschrijven/"
-        activeClassName="active"
-      >
+      <NavLink vertical={vertical} to="/inschrijven/" activeClassName="active">
         INSCHRIJVEN
       </NavLink>
     </Item>
