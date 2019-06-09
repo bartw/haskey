@@ -5,6 +5,4 @@ const ContentTitle = styled.h2`
   font-size: 1.5em;
 `;
 
-export default ({ children }) => (
-  <ContentTitle style={{ fontSize: "1.5em" }}>{children}</ContentTitle>
-);
+export default ({ children }) => <ContentTitle>{children}</ContentTitle>;

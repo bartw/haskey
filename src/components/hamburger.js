@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
-const Hamburger = ({ children }) => (
+export default ({ children }) => (
   <label className="hamburger_toggle">
     <input type="checkbox" style={{ display: "none" }} />
     <div
@@ -21,5 +21,3 @@ const Hamburger = ({ children }) => (
     </div>
   </label>
 );
-
-export default Hamburger;

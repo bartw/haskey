@@ -1,19 +1,18 @@
 import React from "react";
+import styled from "styled-components";
 import ContentTitle from "./content-title";
 
-const style = {
-  marginTop: "20px",
-};
+const Container = styled.div`
+  margin-top: 20px;
+`;
 
-const contentStyle = {
-  marginTop: "10px",
-};
+const Content = styled.div`
+  margin-top: 10px;
+`;
 
-const Content = ({ children, className, title }) => (
-  <div style={style} className={className}>
+export default ({ children, title }) => (
+  <Container>
     {title && <ContentTitle>{title}</ContentTitle>}
-    <div style={contentStyle}>{children}</div>
-  </div>
+    <Content>{children}</Content>
+  </Container>
 );
-
-export default Content;
