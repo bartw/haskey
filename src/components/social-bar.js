@@ -9,12 +9,9 @@ import {
 import styled from "styled-components";
 import media from "../components/media";
 
-const Nav = styled.nav`
+const SocialBar = styled.ul`
   padding-top: 40px;
   clear: both;
-`;
-
-const SocialBar = styled.ul`
   list-style-type: none;
   width: 40%;
   margin: 0 auto;
@@ -23,7 +20,7 @@ const SocialBar = styled.ul`
   ${media.phone`width: 80%;`}
 `;
 
-const SocialBarItem = styled.li`
+const Item = styled.li`
   float: left;
   font-size: 3em;
   width: 25%;
@@ -41,29 +38,19 @@ const Link = styled.a`
   }
 `;
 
+const SocialBarItem = ({ to, icon }) => (
+  <Item>
+    <Link href={to}>
+      <FontAwesomeIcon icon={icon} fixedWidth />
+    </Link>
+  </Item>
+);
+
 export default () => (
-  <Nav>
-    <SocialBar>
-      <SocialBarItem>
-        <Link href="/">
-          <FontAwesomeIcon icon={faFacebook} fixedWidth />
-        </Link>
-      </SocialBarItem>
-      <SocialBarItem>
-        <Link href="/">
-          <FontAwesomeIcon icon={faInstagram} fixedWidth />
-        </Link>
-      </SocialBarItem>
-      <SocialBarItem>
-        <Link href="/">
-          <FontAwesomeIcon icon={faSnapchat} fixedWidth />
-        </Link>
-      </SocialBarItem>
-      <SocialBarItem>
-        <Link href="/">
-          <FontAwesomeIcon icon={faTwitter} fixedWidth />
-        </Link>
-      </SocialBarItem>
-    </SocialBar>
-  </Nav>
+  <SocialBar>
+    <SocialBarItem to="/" icon={faFacebook} />
+    <SocialBarItem to="/" icon={faInstagram} />
+    <SocialBarItem to="/" icon={faSnapchat} />
+    <SocialBarItem to="/" icon={faTwitter} />
+  </SocialBar>
 );
