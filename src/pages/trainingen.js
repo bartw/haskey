@@ -43,7 +43,7 @@ const teams = [
   { team: "U16", wednesday: "18:00 - 19:00", thursday: "17:45 - 18:45" },
   { team: "Divisie 2", tuesday: "20:45 - 21:45", thursday: "20:45 - 21:45" },
   { team: "Dinoz", monday: "20:45 - 21:45", thursday: "22:00 - 23:00" },
-  { team: "Haskey OGs", wednesday: "22:00 - 23:00" },
+  { team: "Haskey OGs", wednesday: "22:15 - 23:15" },
 ];
 
 export default () => {
