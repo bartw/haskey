@@ -13,6 +13,10 @@ const StyledListItem = styled.li`
   line-height: 1.25em;
 `;
 
+const Pragraph = styled.p`
+  line-height: 1.25em;
+`;
+
 const ListItem = ({ children }) => (
   <StyledListItem>
     <FontAwesomeIcon icon={faCheck} fixedWidth />
@@ -38,24 +42,24 @@ export default () => (
         </ul>
       </Content>
       <Content title="Wanneer?">
-        <p>
+        <Pragraph>
           Je mag GRATIS 3 maal een uur meetrainen op zondag van 08:30 tot 09:30.
-        </p>
-        <p>
+        </Pragraph>
+        <Pragraph>
           Je kan best om 08:00 op de schaatsbaan zijn zodat je tijd hebt om je
           om te kleden en een stick te kiezen.
-        </p>
+        </Pragraph>
       </Content>
       <Content title="Waar?">
-        <p>Sport Vlaanderen Hasselt</p>
-        <p>Gouverneur Verwilghensingel 13</p>
-        <p>3500 Hasselt</p>
+        <Pragraph>Sport Vlaanderen Hasselt</Pragraph>
+        <Pragraph>Gouverneur Verwilghensingel 13</Pragraph>
+        <Pragraph>3500 Hasselt</Pragraph>
       </Content>
       <Content title="Hoe?">
-        <p>
+        <Pragraph>
           Stuur een email naar <MailLink mail="proberen@haskeyhasselt.be" /> met
           daarin:
-        </p>
+        </Pragraph>
         <ul>
           <ListItem>Je naam</ListItem>
           <ListItem>Je leeftijd</ListItem>
