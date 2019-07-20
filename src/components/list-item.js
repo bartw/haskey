@@ -5,7 +5,7 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 const StyledListItem = styled.li`
   display: flex;
-  line-height: 1.25em;
+  padding-bottom: 5px;
 `;
 
 export default ({ children }) => (

@@ -1,14 +1,14 @@
 import React from "react";
+import styled from "styled-components";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ContentPage from "../components/content-page";
 import Content from "../components/content";
 import MailLink from "../components/mail-link";
 import ListItem from "../components/list-item";
-import styled from "styled-components";
 
-const Pragraph = styled.p`
-  line-height: 1.25em;
+const Paragraph = styled.p`
+  padding-bottom: 5px;
 `;
 
 export default () => (
@@ -29,24 +29,24 @@ export default () => (
         </ul>
       </Content>
       <Content title="Wanneer?">
-        <Pragraph>
+        <Paragraph>
           Je mag GRATIS 3 maal een uur meetrainen op zondag van 08:30 tot 09:30.
-        </Pragraph>
-        <Pragraph>
+        </Paragraph>
+        <Paragraph>
           Je kan best om 08:00 op de schaatsbaan zijn zodat je tijd hebt om je
           om te kleden en een stick te kiezen.
-        </Pragraph>
+        </Paragraph>
       </Content>
       <Content title="Waar?">
-        <Pragraph>Sport Vlaanderen Hasselt</Pragraph>
-        <Pragraph>Gouverneur Verwilghensingel 13</Pragraph>
-        <Pragraph>3500 Hasselt</Pragraph>
+        <Paragraph>Sport Vlaanderen Hasselt</Paragraph>
+        <Paragraph>Gouverneur Verwilghensingel 13</Paragraph>
+        <Paragraph>3500 Hasselt</Paragraph>
       </Content>
       <Content title="Hoe?">
-        <Pragraph>
+        <Paragraph>
           Stuur een email naar <MailLink mail="proberen@haskeyhasselt.be" /> met
           daarin:
-        </Pragraph>
+        </Paragraph>
         <ul>
           <ListItem>Je naam</ListItem>
           <ListItem>Je leeftijd</ListItem>
