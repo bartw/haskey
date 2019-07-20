@@ -15,5 +15,7 @@ const ExternalLink = styled.a`
 `;
 
 export default ({ to, label }) => (
-  <ExternalLink href={to}>{label}</ExternalLink>
+  <ExternalLink href={to} target="_blank" rel="noopener noreferrer">
+    {label}
+  </ExternalLink>
 );

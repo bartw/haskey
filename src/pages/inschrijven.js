@@ -7,14 +7,31 @@ import ContentPage from "../components/content-page";
 import Content from "../components/content";
 import RegistrationBox from "../components/registration-box";
 
-const registrationForm = "Inschrijvingsformulier";
-const internalRules = "Huishoudelijk reglement";
-const antiDopingStatement = "Anti-dopingverklaring";
-const medicalCertificateRbihf = "Medisch attest RBIHF";
-const medicalCertificateDinoz = "Medisch attest Dinoz";
-const passport = "Kopie identiteitskaart (voor en achter)";
-const passportOrKidsId = "Kopie identiteitskaart/kids-id (voor en achter)";
-const photograph = "Pasfoto";
+const registrationForm = {
+  url: "/forms/Haskey_Inschrijving 2019-2020.pdf",
+  label: "Inschrijvingsformulier",
+};
+const internalRules = {
+  url: "/forms/Haskey_Huishoudelijk reglement_2019-2020.pdf",
+  label: "Huishoudelijk reglement",
+};
+const antiDopingStatement = {
+  url: "/forms/Haskey_Antidopingverklaring.pdf",
+  label: "Anti-dopingverklaring",
+};
+const medicalCertificateRbihf = {
+  url: "https://www.rbihf.be/",
+  label: "Medisch attest RBIHF",
+};
+const medicalCertificateDinoz = {
+  url: "/forms/Haskey_Medisch Attest_DINOZ.pdf",
+  label: "Medisch attest Dinoz",
+};
+const passport = { label: "Kopie identiteitskaart (voor en achter)" };
+const passportOrKidsId = {
+  label: "Kopie identiteitskaart/kids-id (voor en achter)",
+};
+const photograph = { label: "Pasfoto" };
 
 const Container = styled.div`
   display: flex;
