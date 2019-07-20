@@ -1,28 +1,15 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ContentPage from "../components/content-page";
 import Content from "../components/content";
 import MailLink from "../components/mail-link";
+import ListItem from "../components/list-item";
 import styled from "styled-components";
-
-const StyledListItem = styled.li`
-  display: flex;
-  line-height: 1.25em;
-`;
 
 const Pragraph = styled.p`
   line-height: 1.25em;
 `;
-
-const ListItem = ({ children }) => (
-  <StyledListItem>
-    <FontAwesomeIcon icon={faCheck} fixedWidth />
-    <span>{children}</span>
-  </StyledListItem>
-);
 
 export default () => (
   <Layout>
