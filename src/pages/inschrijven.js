@@ -99,7 +99,7 @@ export default () => (
             ]}
           />
           <RegistrationBox
-            title="Divisie 2"
+            title="Divisie 3"
             value={610}
             forms={[
               registrationForm,
