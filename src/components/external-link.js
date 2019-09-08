@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { colors } from "./global-style";
+import { colors } from "../global-style";
 
 const ExternalLink = styled.a`
   color: ${colors.primary};
 
-  :visited {
+  :visited, :active, :focus {
     color: ${colors.primary};
   }
 

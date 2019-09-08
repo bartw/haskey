@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { colors } from "./global-style";
+import { colors } from "../global-style";
 
 const MailLink = styled.a`
   color: ${colors.primary};

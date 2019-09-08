@@ -2,36 +2,28 @@ import React from "react";
 import styled from "styled-components";
 import MailLink from "./mail-link";
 import ExternalLink from "./external-link";
-import media from "./media";
 
 const Footer = styled.footer`
-  padding-top: 40px;
-  padding-bottom: 10px;
-  text-align: center;
+  height: 40px;
+  min-height: 40px;
+  display: flex;
   font-size: 0.75em;
-  line-height: 1.25em;
+  align-items: center;
 `;
 
-const Item = styled.span`
-  ${media.phone`display: block;`}
-`;
-
-const Divider = styled.span`
-  margin: 0 5px;
-
-  ${media.phone`display: none;`}
+const FooterItem = styled.span`
+  flex-grow: 1;
+  text-align: center;
 `;
 
 export default () => (
   <Footer>
-    <Item>© 2019 Haskey</Item>
-    <Divider>|</Divider>
-    <Item>
+    <FooterItem>© {new Date().getFullYear()} Haskey Hasselt</FooterItem>
+    <FooterItem>
       Contacteer ons op <MailLink mail="info@haskeyhasselt.be" />
-    </Item>
-    <Divider>|</Divider>
-    <Item>
+    </FooterItem>
+    <FooterItem>
       Lid van de <ExternalLink to="https://www.rbihf.be/" label="RBIHF" />
-    </Item>
+    </FooterItem>
   </Footer>
 );

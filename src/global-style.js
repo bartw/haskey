@@ -8,7 +8,7 @@ export const colors = {
   gray: "#EAECF0",
   lightGray: "#D2D7DF",
   veryLightGray: "#FAFBFC",
-  background: "#FFFFFF"
+  background: "#FFFFFF",
 };
 
 export default createGlobalStyle`

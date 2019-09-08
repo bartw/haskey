@@ -1,31 +1,31 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import GlobalStyle from "./global-style";
+import GlobalStyle, {colors} from "../global-style";
 import Header from "./header";
-import SocialBar from "./social-bar";
 import Footer from "./footer";
-import media from "./media";
-import { colors } from "./global-style";
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+`;
 
 const Main = styled.main`
-  background-color: ${colors.background};
-  padding-top: 40px;
-  clear: both;
-  margin: 0 auto;
-  width: 90%;
-
-  ${media.tablet`width: 100%;`}
-  ${media.phone`width: 100%;`}
+  flex-grow: 1;
+  overflow: scroll;
+  padding: 20px 10px;
+  background-color: ${colors.background}
 `;
 
 const Layout = ({ children }) => (
   <>
     <GlobalStyle />
-    <Header />
-    <SocialBar />
-    <Main>{children}</Main>
-    <Footer />
+    <Container>
+      <Header />
+      <Main>{children}</Main>
+      <Footer />
+    </Container>
   </>
 );
 

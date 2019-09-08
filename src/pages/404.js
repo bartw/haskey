@@ -1,22 +1,14 @@
 import React from "react";
-import styled from "styled-components";
+
 import Layout from "../components/layout";
-import Hero from "../components/hero";
-import media from "../components/media";
+import SEO from "../components/seo";
 
-const Header = styled.h1`
-  font-size: 6em;
-  font-weight: bold;
-
-  ${media.tablet`font-size: 3em;`}
-  ${media.phone`font-size: 3em;`}
-`;
-
-export default () => (
+const NotFoundPage = () => (
   <Layout>
-    <Hero>
-      <Header>Oeps,</Header>
-      <Header>pagina niet gevonden.</Header>
-    </Hero>
+    <SEO title="404: Not found" />
+    <h1>NOT FOUND</h1>
+    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
   </Layout>
 );
+
+export default NotFoundPage;

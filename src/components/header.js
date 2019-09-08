@@ -1,71 +1,38 @@
 import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
-import NavBar from "./nav-bar";
-import Hamburger from "./hamburger";
-import media from "./media";
-import logo from "../haskey.svg";
-import { colors } from "./global-style";
+import { colors } from "../global-style";
+import media from "../media";
+import logo from "../images/haskey.svg";
+import Menu from "./menu";
 
 const Header = styled.header`
-  border-top: 4px solid ${colors.primary};
-`;
+  border-top: 6px solid ${colors.primary};
+  height: 94px;
+  min-height: 94px;
+  display: flex;
 
-const Left = styled.div`
-  float: left;
-  padding: 0 5px;
+  ${media.phone`
+    height: 69px;
+    min-height: 69px;
+  `}
 `;
 
 const HomeLink = styled(Link)`
-  display: block;
-`;
-
-const Logo = styled.div`
-  height: 100px;
-  margin: 5px 5px 5px 0;
-
-  ${media.tablet`height: 75px;`}
-  ${media.phone`height: 50px;`}
-`;
-
-const LogoImage = styled.img`
+  box-sizing: border-box;
   height: 100%;
+  padding: 0 5px;
 `;
 
-const Nav = styled.nav`
-  float: right;
-`;
-
-const DesktopOnly = styled.div`
-  display: block;
-  ${media.tablet`display: none;`}
-  ${media.phone`display: none;`}
-`;
-
-const MobileOnly = styled.div`
-  display: none;
-  ${media.tablet`display: block;`}
-  ${media.phone`display: block;`}
+const Logo = styled.img`
+  height: 100%;
 `;
 
 export default () => (
   <Header>
-    <Left>
-      <HomeLink to="/">
-        <Logo>
-          <LogoImage src={logo} alt="logo" />
-        </Logo>
-      </HomeLink>
-    </Left>
-    <Nav>
-      <DesktopOnly>
-        <NavBar />
-      </DesktopOnly>
-      <MobileOnly>
-        <Hamburger>
-          <NavBar vertical />
-        </Hamburger>
-      </MobileOnly>
-    </Nav>
+    <HomeLink to="/">
+      <Logo src={logo} alt="logo" />
+    </HomeLink>
+    <Menu />
   </Header>
 );
