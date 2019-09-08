@@ -44,6 +44,23 @@ export default () => (
         <p>3600 Genk</p>
       </Box>
       <Box>
+        <Title>Aangifteformulieren verzekering</Title>
+        <List>
+          <li>
+            <ExternalLink
+              to="/forms/RBIHF_ONGEVALSAANGIFTEFORMULIER.pdf"
+              label="Aangifteformulier RBIHF"
+            />
+          </li>
+          <li>
+            <ExternalLink
+              to="/forms/DINOZ_ONGEVALSAANGIFTEFORMULIER.pdf"
+              label="Aangifteformulier Dinoz"
+            />
+          </li>
+        </List>
+      </Box>
+      <Box>
         <Title>Trooper</Title>
         <P>
           Door via de Trooperpagina van Haskey Hasselt naar een online shop te
