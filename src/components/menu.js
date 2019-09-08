@@ -126,6 +126,9 @@ export default () => (
       <StyledLink to="/inschrijven/" activeClassName="active">
         Inschrijven
       </StyledLink>
+      <StyledLink to="/club/" activeClassName="active">
+        Club
+      </StyledLink>
       <SocialContainer>
         <ExternalLink
           to="https://www.facebook.com/LimburgOne/"
