@@ -9,7 +9,7 @@ import SEO from "../components/seo";
 import ExternalLink from "../components/external-link";
 
 const Hero = styled.div`
-  height: 100%;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
