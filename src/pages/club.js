@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import PageTitle from "../components/page-title";
-import MailLink from "../components/mail-link";
 import Boxes from "../components/boxes";
 import Box from "../components/box";
 import ExternalLink from "../components/external-link";
@@ -48,9 +47,9 @@ export default () => (
         <Title>Trooper</Title>
         <P>
           Door via de Trooperpagina van Haskey Hasselt naar een online shop te
-          surfen, weten de online shops wie je wil steunen. Jij betaalt geen euro extra, maar voor
-          elke aankoop ontvangen we een stevige percent om de clubkas te
-          spijzen.
+          surfen, weten de online shops wie je wil steunen. Jij betaalt geen
+          euro extra, maar voor elke aankoop ontvangen we een stevige percent om
+          de clubkas te spijzen.
         </P>
         <p>
           <ExternalLink
@@ -58,6 +57,51 @@ export default () => (
             label="Haskey Hasselt op Trooper"
           />
         </p>
+      </Box>
+      <Box>
+        <Title>Mutualiteit</Title>
+        <P>
+          Verschillende mutualiteiten zorgen voor een financiële tussenkomst
+          wanneer je een lidmaatschap bij een sportaanbieder afsluit.
+        </P>
+        <List>
+          <li>
+            <ExternalLink
+              to="https://www.cm.be/diensten-en-voordelen/vakantie-en-vrije-tijd/sport/sportvereniging"
+              label="CM"
+            />
+          </li>
+          <li>
+            <ExternalLink
+              to="https://www.fsmb.be/sport-of-fitnessclub"
+              label="Socialistische Mutualiteit"
+            />
+          </li>
+          <li>
+            <ExternalLink
+              to="https://www.lm.be/lmplus/rubrieken/voordelen-en-diensten/sport-en-beweging/sportprikkel/pages/sportprikkel.aspx"
+              label="LM Plus"
+            />
+          </li>
+          <li>
+            <ExternalLink
+              to="https://www.oz.be/vitaliteit/voordelen/fitness-sportclub"
+              label="OZ"
+            />
+          </li>
+          <li>
+            <ExternalLink
+              to="https://www.vnz.be/voordelen-terugbetalingen/sport-fitnessclub/"
+              label="VNZ"
+            />
+          </li>
+          <li>
+            <ExternalLink
+              to="https://www.partena-ziekenfonds.be/nl/ziekenfonds-en-voordelen/voordelen-en-terugbetalingen/sportclub-lidgeld"
+              label="Partena"
+            />
+          </li>
+        </List>
       </Box>
     </Page>
   </Layout>
