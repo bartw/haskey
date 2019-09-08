@@ -4,11 +4,11 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import PageTitle from "../components/page-title";
 import Boxes from "../components/boxes";
-import Box from "../components/box";
+import { WrappingBox } from "../components/box";
 
 const Teams = Boxes;
 
-const Team = Box;
+const Team = WrappingBox;
 
 const Times = styled.ul`
   margin-top: 20px;
@@ -83,8 +83,10 @@ export default () => {
       <Title>{team}</Title>
       {
         <Times>
-          {practices.map(({day, time}) => (
-            <Time key={day + time}>{day} {time}</Time>
+          {practices.map(({ day, time }) => (
+            <Time key={day + time}>
+              {day} {time}
+            </Time>
           ))}
         </Times>
       }

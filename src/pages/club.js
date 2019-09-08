@@ -3,12 +3,15 @@ import styled from "styled-components";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import PageTitle from "../components/page-title";
-import Boxes from "../components/boxes";
 import Box from "../components/box";
 import ExternalLink from "../components/external-link";
 
-const Page = styled(Boxes)`
+const Page = styled.div`
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
   line-height: 1.2em;
+  width: 100%;
 `;
 
 const Title = styled.h1`

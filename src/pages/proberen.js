@@ -4,10 +4,12 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import PageTitle from "../components/page-title";
 import MailLink from "../components/mail-link";
-import Boxes from "../components/boxes"
-import Box from "../components/box"
+import Box from "../components/box";
 
-const Page = styled(Boxes)`
+const Page = styled.div`
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
   line-height: 1.2em;
 `;
 

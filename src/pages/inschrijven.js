@@ -5,8 +5,8 @@ import SEO from "../components/seo";
 import PageTitle from "../components/page-title";
 import ExternalLink from "../components/external-link";
 import Price from "../components/price";
-import Boxes from "../components/boxes"
-import Box from "../components/box"
+import Boxes from "../components/boxes";
+import { WrappingBox } from "../components/box";
 
 const registrationForm = {
   url: "/forms/Haskey_Inschrijving 2019-2020.pdf",
@@ -59,7 +59,7 @@ const Documents = styled.ul`
 `;
 
 const Plan = ({ title, subtitle, value, forms }) => (
-  <Box>
+  <WrappingBox>
     <Title>{title}</Title>
     <Subtitle>{subtitle}</Subtitle>
     <Price value={value} />
@@ -71,7 +71,7 @@ const Plan = ({ title, subtitle, value, forms }) => (
         </li>
       ))}
     </Documents>
-  </Box>
+  </WrappingBox>
 );
 
 export default () => (

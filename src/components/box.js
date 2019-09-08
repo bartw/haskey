@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { colors } from "../global-style";
 import media from "../media";
 
-export default styled.div`
+const Box = styled.div`
   margin-top: 20px;
   border-top: 4px solid ${colors.primary};
   background-color: ${colors.veryLightGray};
@@ -10,11 +10,19 @@ export default styled.div`
   padding: 10px 20px;
   min-height: 8em;
   min-width: 18em;
-  margin-right: 20px;
 
   ${media.phone`
     min-height: 6em;
-    width: 100%;
     margin-right: 0;
   `}
 `;
+
+export const WrappingBox = styled(Box)`
+  margin-right: 20px;
+  
+  ${media.phone`
+    width: 100%;
+  `}
+`;
+
+export default Box;
