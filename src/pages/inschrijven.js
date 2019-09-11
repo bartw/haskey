@@ -59,7 +59,6 @@ const Documents = styled.ul`
 `;
 
 const Plan = ({ title, subtitle, value, forms }) => (
-  <div>
     <WrappingBox>
       <Title>{title}</Title>
       <Subtitle>{subtitle}</Subtitle>
@@ -73,7 +72,6 @@ const Plan = ({ title, subtitle, value, forms }) => (
         ))}
       </Documents>
     </WrappingBox>
-  </div>
 );
 
 export default () => (
