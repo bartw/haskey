@@ -59,19 +59,21 @@ const Documents = styled.ul`
 `;
 
 const Plan = ({ title, subtitle, value, forms }) => (
-  <WrappingBox>
-    <Title>{title}</Title>
-    <Subtitle>{subtitle}</Subtitle>
-    <Price value={value} />
-    {!!forms.length && <p>Benodigde documenten:</p>}
-    <Documents>
-      {forms.map(({ url, label }, index) => (
-        <li key={index}>
-          {url ? <ExternalLink to={url} label={label} /> : label}
-        </li>
-      ))}
-    </Documents>
-  </WrappingBox>
+  <div>
+    <WrappingBox>
+      <Title>{title}</Title>
+      <Subtitle>{subtitle}</Subtitle>
+      <Price value={value} />
+      {!!forms.length && <p>Benodigde documenten:</p>}
+      <Documents>
+        {forms.map(({ url, label }, index) => (
+          <li key={index}>
+            {url ? <ExternalLink to={url} label={label} /> : label}
+          </li>
+        ))}
+      </Documents>
+    </WrappingBox>
+  </div>
 );
 
 export default () => (
