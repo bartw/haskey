@@ -52,6 +52,7 @@ const Photos = styled.div`
 `;
 
 const Photo = styled.img`
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
   width: 100%;
   max-width: 750px;
   margin-top: 25px;
