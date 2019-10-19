@@ -45,7 +45,7 @@ export default () => (
       <H1>HASSELT</H1>
       <SocialContainer>
         <ExternalLink
-          to="https://www.facebook.com/LimburgOne/"
+          to="https://www.facebook.com/haskeyhasselt/"
           label={<Icon icon={faFacebook} fixedWidth />}
         />
         <ExternalLink
