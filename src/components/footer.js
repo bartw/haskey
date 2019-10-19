@@ -20,7 +20,7 @@ export default () => (
   <Footer>
     <FooterItem>© {new Date().getFullYear()} Haskey Hasselt</FooterItem>
     <FooterItem>
-      Contacteer ons op <MailLink mail="info@haskeyhasselt.be" />
+      Contacteer ons op <MailLink mail="ijshockeyhasselt@gmail.com" />
     </FooterItem>
     <FooterItem>
       Lid van de <ExternalLink to="https://www.rbihf.be/" label="RBIHF" />

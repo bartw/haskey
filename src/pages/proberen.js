@@ -62,7 +62,7 @@ export default () => (
       <Box>
         <Title>Hoe?</Title>
         <P>
-          Stuur een email naar <MailLink mail="proberen@haskeyhasselt.be" /> met
+          Stuur een email naar <MailLink mail="ijshockeyhasselt@gmail.com" /> met
           daarin:
         </P>
         <List>
