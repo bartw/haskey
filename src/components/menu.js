@@ -131,7 +131,7 @@ export default () => (
       </StyledLink>
       <SocialContainer>
         <ExternalLink
-          to="https://www.facebook.com/LimburgOne/"
+          to="https://www.facebook.com/haskeyhasselt/"
           label={<Icon icon={faFacebook} />}
         />
         <ExternalLink
