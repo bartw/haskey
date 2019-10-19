@@ -33,7 +33,9 @@ const H1 = styled.h1`
   `}
 `;
 
-const SocialContainer = styled.div``;
+const SocialContainer = styled.div`
+  margin-top: 10px;
+`;
 
 const Icon = styled(FontAwesomeIcon)`
   color: ${colors.text};
