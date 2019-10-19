@@ -7,9 +7,17 @@ import media from "../media";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ExternalLink from "../components/external-link";
+import U12 from "../images/U12.jpg";
+import U16 from "../images/U16.jpg";
+import DIV2 from "../images/DIV2.jpg";
+
+const photos = [
+  { src: U12, label: "U12" },
+  { src: U16, label: "U16" },
+  { src: DIV2, label: "DIV2" },
+];
 
 const Hero = styled.div`
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,8 +33,7 @@ const H1 = styled.h1`
   `}
 `;
 
-const SocialContainer = styled.div`
-`;
+const SocialContainer = styled.div``;
 
 const Icon = styled(FontAwesomeIcon)`
   color: ${colors.text};
@@ -35,6 +42,17 @@ const Icon = styled(FontAwesomeIcon)`
   ${media.phone`
     font-size: 3em;
   `}
+`;
+
+const Photos = styled.div`
+  margin-top: 50px;
+  text-align: center;
+`;
+
+const Photo = styled.img`
+  width: 100%;
+  max-width: 750px;
+  margin-top: 25px;
 `;
 
 export default () => (
@@ -54,5 +72,12 @@ export default () => (
         />
       </SocialContainer>
     </Hero>
+    <Photos>
+      {photos.map(({ src, label }, index) => (
+        <div key={index}>
+          <Photo src={src} alt={label} />
+        </div>
+      ))}
+    </Photos>
   </Layout>
 );
