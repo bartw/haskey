@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Haskey Hasselt">
+
+  <title>Trainingen - Haskey Hasselt</title>
+
+  <link rel="icon" href="haskey.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/8e30477f4b.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-royal-900">
+  <div class="relative max-w-screen-xl min-h-screen mx-auto bg-royal-100 text-royal-900">
+    <nav class="overflow-x-hidden">
+      <div id="menu" class="hidden absolute z-10 w-full h-screen bg-royal-500 text-royal-100">
+        <button type="button" id="close-menu-button" class="absolute text-4xl right-0 top-0">
+          <i class="fas fa-times fa-fw"></i>
+        </button>
+        <ul class="flex flex-col h-full items-center justify-center text-lg">
+          <li class="mb-4"><a href="/">Home</a></li>
+          <li class="mb-4"><a href="/trainingen">Trainingen</a></li>
+          <li class="mb-4"><a href="/proberen">Proberen</a></li>
+          <li class="mb-4"><a href="/inschrijven">Inschrijven</a></li>
+          <li class="mb-4"><a href="/club">Club</a></li>
+        </ul>
+      </div>
+      <div class="absolute right-0 top-0 bg-royal-500 text-royal-100"
+        style="width: 75px; height: 75px; border-radius: 0 0 0 75px;">
+        <button type="button" id="open-menu-button" class="absolute right-0 top-0 text-4xl">
+          <i class="fas fa-bars fa-fw"></i>
+        </button>
+      </div>
+    </nav>
+    <header class="flex p-2 sm:p-4">
+      <a href="/">
+        <img class="w-20 mr-4 md:w-24 md:mr-6 lg:w-32 lg:mr-8" src=haskey.svg />
+      </a>
+      <h1 class="text-2xl font-semibold">Trainingen</h1>
+    </header>
+    <main class="mt-16 p-2 sm:p-4 min-h-screen">
+      <section>
+        <h2 class="text-lg font-semibold">Jeugd</h2>
+        <ul class="mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <li>
+            <h3 class="font-semibold">U8</h3>
+            <ul>
+              <li class="mt-2">Woensdag: 17:00 - 18:00</li>
+              <li class="mt-2">Zondag: 08:30 - 09:30</li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="font-semibold">U10</h3>
+            <ul>
+              <li class="mt-2">Woensdag: 17:00 - 18:00</li>
+              <li class="mt-2">Zondag: 08:30 - 09:30</li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="font-semibold">U12</h3>
+            <ul>
+              <li class="mt-2">Woensdag: 17:00 - 18:00</li>
+              <li class="mt-2">Donderdag: 17:45 - 18:45</li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="font-semibold">U16</h3>
+            <ul>
+              <li class="mt-2">Woensdag: 18:00 - 19:00</li>
+              <li class="mt-2">Donderdag: 17:45 - 18:45</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="mt-8">
+        <h2 class="text-lg font-semibold">Senioren</h2>
+        <ul class="mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <li>
+            <h3 class="font-semibold">Divisie 2</h3>
+            <ul>
+              <li class="mt-2">Dinsdag: 21:15 - 22:15</li>
+              <li class="mt-2">Donderdag: 20:45 - 21:45</li>
+            </ul>
+          </li>
+
+          <li>
+            <h3 class="font-semibold">Dinoz</h3>
+            <ul>
+              <li class="mt-2">Maandag: 21:15 - 22:15</li>
+              <li class="mt-2">Donderdag: 22:00 - 23:00</li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="font-semibold">ijshockij Hasselt</h3>
+            <ul>
+              <li class="mt-2">Woensdag: 22:15 - 23:15</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="mt-8">
+        <h2 class="text-lg font-semibold">Andere</h2>
+        <ul class="mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <li>
+            <h3 class="font-semibold">Rookies</h3>
+            <ul>
+              <li class="mt-2">Zondag: 08:30 - 09:30</li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="font-semibold">Goalies</h3>
+            <ul>
+              <li class="mt-2">Zondag: 08:30 - 09:30</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="mt-8 px-8 pt-8 pb-12 bg-royal-900 text-royal-100">
+      <div class="flex justify-center text-xl">
+        <a class="mx-4" href="mailto:ijshockeyhasselt@gmail.com">
+          <i class="far fa-envelope"></i>
+        </a>
+        <a class="mx-4" href="https://www.facebook.com/haskeyhasselt/">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a class="mx-4" href="https://www.instagram.com/haskey_ijshockeyclub/">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <div class="mt-4 text-center text-sm">© 2020 Haskey Hasselt</div>
+    </footer>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const openMenuButton = document.getElementById("open-menu-button");
+      const closeMenuButton = document.getElementById("close-menu-button");
+      const menu = document.getElementById("menu");
+
+      openMenuButton.addEventListener("click", (event) => {
+        event.preventDefault();
+        menu.classList.remove("hidden");
+        document.body.classList.add("overflow-hidden");
+      });
+
+      closeMenuButton.addEventListener("click", (event) => {
+        event.preventDefault();
+        menu.classList.add("hidden");
+        document.body.classList.remove("overflow-hidden");
+      });
+    });
+  </script>
+</body>
+
+</html>

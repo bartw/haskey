@@ -2,32 +2,18 @@
   "name": "haskey",
   "private": true,
   "description": "Website for ice-hockey club Haskey Hasselt",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "Bart Wijnants",
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.22",
-    "@fortawesome/free-brands-svg-icons": "^5.10.2",
-    "@fortawesome/react-fontawesome": "^0.1.4",
-    "babel-plugin-styled-components": "^1.10.6",
-    "dotenv": "^8.1.0",
-    "gatsby": "^2.13.73",
-    "gatsby-image": "^2.2.10",
-    "gatsby-plugin-manifest": "^2.2.6",
-    "gatsby-plugin-react-helmet": "^3.1.4",
-    "gatsby-plugin-sharp": "^2.2.13",
-    "gatsby-plugin-styled-components": "^3.1.3",
-    "gatsby-source-filesystem": "^2.1.11",
-    "gatsby-transformer-sharp": "^2.2.7",
-    "prop-types": "^15.7.2",
-    "react": "^16.9.0",
-    "react-burger-menu": "^2.6.11",
-    "react-dom": "^16.9.0",
-    "react-helmet": "^5.2.1",
-    "styled-components": "^4.3.2",
-    "styled-reset": "^4.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "autoprefixer": "^9.8.4",
+    "copyfiles": "^2.3.0",
+    "cssnano": "^4.1.10",
+    "postcss-cli": "^7.1.1",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^1.4.6",
+    "watch": "^1.0.2"
   },
   "keywords": [
     "haskey",
@@ -36,11 +22,15 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve"
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "clean": "rimraf public",
+    "build:html": "copyfiles -u 1 src/*.html public",
+    "build:css": "postcss src/index.css -o public/style.css",
+    "build:assets": "copyfiles -u 1 assets/*.* assets/**/*.* public",
+    "build": "npm run clean && npm run build:html && npm run build:css && npm run build:assets",
+    "watch:build": "watch 'npm run build' ./src",
+    "serve": "npx http-server public",
+    "start": "npm run watch:build & npm run serve"
   },
   "repository": {
     "type": "git",
