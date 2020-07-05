@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Haskey Hasselt">
+
+  <title>Haskey Hasselt</title>
+
+  <link rel="icon" href="haskey.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="prefetch" href="trainingen.html">
+  <link rel="prefetch" href="proberen.html">
+  <link rel="prefetch" href="inschrijven.html">
+  <link rel="prefetch" href="club.html">
+  <script src="https://kit.fontawesome.com/8e30477f4b.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-royal-900">
+  <div class="relative max-w-screen-xl min-h-screen mx-auto bg-royal-100 text-royal-900">
+    <nav class="overflow-x-hidden">
+      <div id="menu" class="hidden absolute z-10 w-full h-screen bg-royal-500 text-royal-100">
+        <button type="button" id="close-menu-button" class="absolute text-4xl right-0 top-0">
+          <i class="fas fa-times fa-fw"></i>
+        </button>
+        <ul class="flex flex-col h-full items-center justify-center text-lg">
+          <li class="mb-4"><a href="/">Home</a></li>
+          <li class="mb-4"><a href="/trainingen">Trainingen</a></li>
+          <li class="mb-4"><a href="/proberen">Proberen</a></li>
+          <li class="mb-4"><a href="/inschrijven">Inschrijven</a></li>
+          <li class="mb-4"><a href="/club">Club</a></li>
+        </ul>
+      </div>
+      <div class="absolute right-0 top-0 bg-royal-500 text-royal-100"
+        style="width: 75px; height: 75px; border-radius: 0 0 0 75px;">
+        <button type="button" id="open-menu-button" class="absolute right-0 top-0 text-4xl">
+          <i class="fas fa-bars fa-fw"></i>
+        </button>
+      </div>
+    </nav>
+    <main class="flex flex-col h-screen items-center justify-center">
+      <img class="w-64" src=haskey.svg />
+      <h1 class="uppercase text-4xl font-semibold text-center">Haskey Hasselt</h1>
+    </main>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const openMenuButton = document.getElementById("open-menu-button");
+      const closeMenuButton = document.getElementById("close-menu-button");
+      const menu = document.getElementById("menu");
+
+      openMenuButton.addEventListener("click", (event) => {
+        event.preventDefault();
+        menu.classList.remove("hidden");
+        document.body.classList.add("overflow-hidden");
+      });
+
+      closeMenuButton.addEventListener("click", (event) => {
+        event.preventDefault();
+        menu.classList.add("hidden");
+        document.body.classList.remove("overflow-hidden");
+      });
+    });
+  </script>
+</body>
+
+</html>
