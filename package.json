@@ -28,9 +28,9 @@
     "build:css": "postcss src/index.css -o public/style.css",
     "build:assets": "copyfiles -u 1 assets/*.* assets/**/*.* public",
     "build": "npm run clean && npm run build:html && npm run build:css && npm run build:assets",
-    "watch:build": "watch 'npm run build' ./src",
+    "build:watch": "watch 'npm run build' ./src",
     "serve": "npx http-server public",
-    "start": "npm run watch:build & npm run serve"
+    "start": "npm run build:watch & npm run serve"
   },
   "repository": {
     "type": "git",
