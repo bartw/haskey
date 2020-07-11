@@ -30,22 +30,19 @@ const IndexPage = () => (
       <h2 className="text-lg font-semibold">Contact</h2>
       <ul>
         <li className="mt-2">
-          <a className="" href="mailto:ijshockeyhasselt@gmail.com">
+          <a href="mailto:ijshockeyhasselt@gmail.com">
             <FontAwesomeIcon icon={faEnvelope} fixedWidth className="mr-2" />
             <span className="text-royal-500">ijshockeyhasselt@gmail.com</span>
           </a>
         </li>
         <li className="mt-2">
-          <a className="" href="https://www.facebook.com/haskeyhasselt/">
+          <a href="https://www.facebook.com/haskeyhasselt/">
             <FontAwesomeIcon icon={faFacebook} fixedWidth className="mr-2" />
             <span className="text-royal-500">Facebook</span>
           </a>
         </li>
         <li className="mt-2">
-          <a
-            className=""
-            href="https://www.instagram.com/haskey_ijshockeyclub/"
-          >
+          <a href="https://www.instagram.com/haskey_ijshockeyclub/">
             <FontAwesomeIcon icon={faInstagram} fixedWidth className="mr-2" />
             <span className="text-royal-500">Instagram</span>
           </a>
@@ -55,21 +52,15 @@ const IndexPage = () => (
     <section className="mb-6">
       <h2 className="text-lg font-semibold">Aangifteformulieren verzekering</h2>
       <ul>
-        <li className="mt-2 flex items-baseline">
-          <a
-            className="flex items-baseline"
-            href="forms/RBIHF_ONGEVALSAANGIFTEFORMULIER.pdf"
-          >
-            <FontAwesomeIcon icon={faFilePdf} className="mr-2" />
+        <li className="mt-2">
+          <a href="forms/RBIHF_ONGEVALSAANGIFTEFORMULIER.pdf">
+            <FontAwesomeIcon icon={faFilePdf} fixedWidth className="mr-2" />
             <span className="text-royal-500">Aangifteformulier RBIHF</span>
           </a>
         </li>
-        <li className="mt-2 flex items-baseline">
-          <a
-            className="flex items-baseline"
-            href="forms/DINOZ_ONGEVALSAANGIFTEFORMULIER.pdf"
-          >
-            <FontAwesomeIcon icon={faFilePdf} className="mr-2" />
+        <li className="mt-2">
+          <a href="forms/DINOZ_ONGEVALSAANGIFTEFORMULIER.pdf">
+            <FontAwesomeIcon icon={faFilePdf} fixedWidth className="mr-2" />
             <span className="text-royal-500">Aangifteformulier Dinoz</span>
           </a>
         </li>
@@ -84,8 +75,13 @@ const IndexPage = () => (
         clubkas te spijzen.
       </p>
       <div className="mt-2">
-        <a className="text-royal-500" href="https://trooper.be/haskey">
-          Haskey Hasselt op Trooper
+        <a href="https://trooper.be/haskey">
+          <FontAwesomeIcon
+            icon={faExternalLinkAlt}
+            fixedWidth
+            className="mr-2"
+          />
+          <span className="text-royal-500">Haskey Hasselt op Trooper</span>
         </a>
       </div>
     </section>
@@ -96,57 +92,63 @@ const IndexPage = () => (
         wanneer je een lidmaatschap bij een sportaanbieder afsluit.
       </p>
       <ul>
-        <li className="mt-2 flex items-baseline">
-          <a
-            className="flex items-baseline"
-            href="https://www.cm.be/diensten-en-voordelen/vakantie-en-vrije-tijd/sport/sportvereniging"
-          >
-            <FontAwesomeIcon icon={faExternalLinkAlt} className="mr-2" />
+        <li className="mt-2">
+          <a href="https://www.cm.be/diensten-en-voordelen/vakantie-en-vrije-tijd/sport/sportvereniging">
+            <FontAwesomeIcon
+              icon={faExternalLinkAlt}
+              fixedWidth
+              className="mr-2"
+            />
             <span className="text-royal-500">CM</span>
           </a>
         </li>
-        <li className="mt-2 flex items-baseline">
-          <a
-            className="flex items-baseline"
-            href="https://www.fsmb.be/sport-of-fitnessclub"
-          >
-            <FontAwesomeIcon icon={faExternalLinkAlt} className="mr-2" />
+        <li className="mt-2">
+          <a href="https://www.fsmb.be/sport-of-fitnessclub">
+            <FontAwesomeIcon
+              icon={faExternalLinkAlt}
+              fixedWidth
+              className="mr-2"
+            />
             <span className="text-royal-500">Socialistische Mutualiteit</span>
           </a>
         </li>
-        <li className="mt-2 flex items-baseline">
-          <a
-            className="flex items-baseline"
-            href="https://www.lm.be/lmplus/rubrieken/voordelen-en-diensten/sport-en-beweging/sportprikkel/pages/sportprikkel.aspx"
-          >
-            <FontAwesomeIcon icon={faExternalLinkAlt} className="mr-2" />
+        <li className="mt-2">
+          <a href="https://www.lm.be/lmplus/rubrieken/voordelen-en-diensten/sport-en-beweging/sportprikkel/pages/sportprikkel.aspx">
+            <FontAwesomeIcon
+              icon={faExternalLinkAlt}
+              fixedWidth
+              className="mr-2"
+            />
             <span className="text-royal-500">LM Plus</span>
           </a>
         </li>
-        <li className="mt-2 flex items-baseline">
-          <a
-            className="flex items-baseline"
-            href="https://www.oz.be/vitaliteit/voordelen/fitness-sportclub"
-          >
-            <FontAwesomeIcon icon={faExternalLinkAlt} className="mr-2" />
+        <li className="mt-2">
+          <a href="https://www.oz.be/vitaliteit/voordelen/fitness-sportclub">
+            <FontAwesomeIcon
+              icon={faExternalLinkAlt}
+              fixedWidth
+              className="mr-2"
+            />
             <span className="text-royal-500">OZ</span>
           </a>
         </li>
-        <li className="mt-2 flex items-baseline">
-          <a
-            className="flex items-baseline"
-            href="https://www.vnz.be/voordelen-terugbetalingen/sport-fitnessclub/"
-          >
-            <FontAwesomeIcon icon={faExternalLinkAlt} className="mr-2" />
+        <li className="mt-2">
+          <a href="https://www.vnz.be/voordelen-terugbetalingen/sport-fitnessclub/">
+            <FontAwesomeIcon
+              icon={faExternalLinkAlt}
+              fixedWidth
+              className="mr-2"
+            />
             <span className="text-royal-500">VNZ</span>
           </a>
         </li>
-        <li className="mt-2 flex items-baseline">
-          <a
-            className="flex items-baseline"
-            href="https://www.partena-ziekenfonds.be/nl/ziekenfonds-en-voordelen/voordelen-en-terugbetalingen/sportclub-lidgeld"
-          >
-            <FontAwesomeIcon icon={faExternalLinkAlt} className="mr-2" />
+        <li className="mt-2">
+          <a href="https://www.partena-ziekenfonds.be/nl/ziekenfonds-en-voordelen/voordelen-en-terugbetalingen/sportclub-lidgeld">
+            <FontAwesomeIcon
+              icon={faExternalLinkAlt}
+              fixedWidth
+              className="mr-2"
+            />
             <span className="text-royal-500">Partena</span>
           </a>
         </li>

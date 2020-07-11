@@ -42,7 +42,11 @@ const IndexPage = () => (
                     className="flex items-baseline"
                     href="forms/Haskey_Inschrijving.pdf"
                   >
-                    <FontAwesomeIcon icon={faFilePdf} className="mr-2" />
+                    <FontAwesomeIcon
+                      icon={faFilePdf}
+                      fixedWidth
+                      className="mr-2"
+                    />
                     <span className="text-royal-500">Inschrijving</span>
                   </a>
                 </li>
@@ -51,7 +55,11 @@ const IndexPage = () => (
                     className="flex items-baseline"
                     href="forms/Haskey_Huishoudelijk reglement.pdf"
                   >
-                    <FontAwesomeIcon icon={faFilePdf} className="mr-2" />
+                    <FontAwesomeIcon
+                      icon={faFilePdf}
+                      fixedWidth
+                      className="mr-2"
+                    />
                     <span className="text-royal-500">
                       Huishoudelijk reglement
                     </span>
@@ -62,16 +70,20 @@ const IndexPage = () => (
                     className="flex items-baseline"
                     href="https://www.rbihf.be/"
                   >
-                    <FontAwesomeIcon icon={faFileAlt} className="mr-2" />
+                    <FontAwesomeIcon
+                      icon={faFileAlt}
+                      fixedWidth
+                      className="mr-2"
+                    />
                     <span className="text-royal-500">Medisch attest RBIHF</span>
                   </a>
                 </li>
                 <li className="mt-2 flex items-baseline">
-                  <FontAwesomeIcon icon={faFile} className="mr-2" />
+                  <FontAwesomeIcon icon={faFile} fixedWidth className="mr-2" />
                   <span>Kopie identiteitskaart (voor en achter)</span>
                 </li>
                 <li className="mt-2 flex items-baseline">
-                  <FontAwesomeIcon icon={faFile} className="mr-2" />
+                  <FontAwesomeIcon icon={faFile} fixedWidth className="mr-2" />
                   <span>Pasfoto</span>
                 </li>
               </ul>
@@ -107,7 +119,11 @@ const IndexPage = () => (
                     className="flex items-baseline"
                     href="forms/Haskey_Inschrijving.pdf"
                   >
-                    <FontAwesomeIcon icon={faFilePdf} className="mr-2" />
+                    <FontAwesomeIcon
+                      icon={faFilePdf}
+                      fixedWidth
+                      className="mr-2"
+                    />
                     <span className="text-royal-500">Inschrijving</span>
                   </a>
                 </li>
@@ -116,7 +132,11 @@ const IndexPage = () => (
                     className="flex items-baseline"
                     href="forms/Haskey_Huishoudelijk reglement.pdf"
                   >
-                    <FontAwesomeIcon icon={faFilePdf} className="mr-2" />
+                    <FontAwesomeIcon
+                      icon={faFilePdf}
+                      fixedWidth
+                      className="mr-2"
+                    />
                     <span className="text-royal-500">
                       Huishoudelijk reglement
                     </span>
@@ -127,7 +147,11 @@ const IndexPage = () => (
                     className="flex items-baseline"
                     href="https://www.rbihf.be/"
                   >
-                    <FontAwesomeIcon icon={faFilePdf} className="mr-2" />
+                    <FontAwesomeIcon
+                      icon={faFilePdf}
+                      fixedWidth
+                      className="mr-2"
+                    />
                     <span className="text-royal-500">Medisch attest RBIHF</span>
                   </a>
                 </li>
@@ -158,7 +182,11 @@ const IndexPage = () => (
                     className="flex items-baseline"
                     href="forms/Haskey_Inschrijving.pdf"
                   >
-                    <FontAwesomeIcon icon={faFilePdf} className="mr-2" />
+                    <FontAwesomeIcon
+                      icon={faFilePdf}
+                      fixedWidth
+                      className="mr-2"
+                    />
                     <span className="text-royal-500">Inschrijving</span>
                   </a>
                 </li>
@@ -167,7 +195,11 @@ const IndexPage = () => (
                     className="flex items-baseline"
                     href="forms/Haskey_Huishoudelijk reglement.pdf"
                   >
-                    <FontAwesomeIcon icon={faFilePdf} className="mr-2" />
+                    <FontAwesomeIcon
+                      icon={faFilePdf}
+                      fixedWidth
+                      className="mr-2"
+                    />
                     <span className="text-royal-500">
                       Huishoudelijk reglement
                     </span>
@@ -178,7 +210,11 @@ const IndexPage = () => (
                     className="flex items-baseline"
                     href="https://www.rbihf.be/"
                   >
-                    <FontAwesomeIcon icon={faFileAlt} className="mr-2" />
+                    <FontAwesomeIcon
+                      icon={faFileAlt}
+                      fixedWidth
+                      className="mr-2"
+                    />
                     <span className="text-royal-500">Medisch attest RBIHF</span>
                   </a>
                 </li>
@@ -209,7 +245,11 @@ const IndexPage = () => (
                     className="flex items-baseline"
                     href="forms/Haskey_Inschrijving.pdf"
                   >
-                    <FontAwesomeIcon icon={faFilePdf} className="mr-2" />
+                    <FontAwesomeIcon
+                      icon={faFilePdf}
+                      fixedWidth
+                      className="mr-2"
+                    />
                     <span className="text-royal-500">Inschrijving</span>
                   </a>
                 </li>
@@ -218,7 +258,11 @@ const IndexPage = () => (
                     className="flex items-baseline"
                     href="forms/Haskey_Huishoudelijk reglement.pdf"
                   >
-                    <FontAwesomeIcon icon={faFilePdf} className="mr-2" />
+                    <FontAwesomeIcon
+                      icon={faFilePdf}
+                      fixedWidth
+                      className="mr-2"
+                    />
                     <span className="text-royal-500">
                       Huishoudelijk reglement
                     </span>
@@ -229,7 +273,11 @@ const IndexPage = () => (
                     className="flex items-baseline"
                     href="https://www.rbihf.be/"
                   >
-                    <FontAwesomeIcon icon={faFileAlt} className="mr-2" />
+                    <FontAwesomeIcon
+                      icon={faFileAlt}
+                      fixedWidth
+                      className="mr-2"
+                    />
                     <span className="text-royal-500">Medisch attest RBIHF</span>
                   </a>
                 </li>
@@ -260,7 +308,11 @@ const IndexPage = () => (
                     className="flex items-baseline"
                     href="forms/Haskey_Inschrijving.pdf"
                   >
-                    <FontAwesomeIcon icon={faFilePdf} className="mr-2" />
+                    <FontAwesomeIcon
+                      icon={faFilePdf}
+                      fixedWidth
+                      className="mr-2"
+                    />
                     <span className="text-royal-500">Inschrijving</span>
                   </a>
                 </li>
@@ -269,7 +321,11 @@ const IndexPage = () => (
                     className="flex items-baseline"
                     href="forms/Haskey_Huishoudelijk reglement.pdf"
                   >
-                    <FontAwesomeIcon icon={faFilePdf} className="mr-2" />
+                    <FontAwesomeIcon
+                      icon={faFilePdf}
+                      fixedWidth
+                      className="mr-2"
+                    />
                     <span className="text-royal-500">
                       Huishoudelijk reglement
                     </span>
@@ -280,7 +336,11 @@ const IndexPage = () => (
                     className="flex items-baseline"
                     href="forms/Haskey_Antidopingverklaring.pdf"
                   >
-                    <FontAwesomeIcon icon={faFilePdf} className="mr-2" />
+                    <FontAwesomeIcon
+                      icon={faFilePdf}
+                      fixedWidth
+                      className="mr-2"
+                    />
                     <span className="text-royal-500">
                       Anti-doping verklaring
                     </span>
@@ -291,7 +351,11 @@ const IndexPage = () => (
                     className="flex items-baseline"
                     href="https://www.rbihf.be/"
                   >
-                    <FontAwesomeIcon icon={faFileAlt} className="mr-2" />
+                    <FontAwesomeIcon
+                      icon={faFileAlt}
+                      fixedWidth
+                      className="mr-2"
+                    />
                     <span className="text-royal-500">Medisch attest RBIHF</span>
                   </a>
                 </li>
@@ -322,7 +386,11 @@ const IndexPage = () => (
                     className="flex items-baseline"
                     href="forms/Haskey_Inschrijving.pdf"
                   >
-                    <FontAwesomeIcon icon={faFilePdf} className="mr-2" />
+                    <FontAwesomeIcon
+                      icon={faFilePdf}
+                      fixedWidth
+                      className="mr-2"
+                    />
                     <span className="text-royal-500">Inschrijving</span>
                   </a>
                 </li>
@@ -331,7 +399,11 @@ const IndexPage = () => (
                     className="flex items-baseline"
                     href="forms/Haskey_Huishoudelijk reglement.pdf"
                   >
-                    <FontAwesomeIcon icon={faFilePdf} className="mr-2" />
+                    <FontAwesomeIcon
+                      icon={faFilePdf}
+                      fixedWidth
+                      className="mr-2"
+                    />
                     <span className="text-royal-500">
                       Huishoudelijk reglement
                     </span>
@@ -342,7 +414,11 @@ const IndexPage = () => (
                     className="flex items-baseline"
                     href="forms/Haskey_Antidopingverklaring.pdf"
                   >
-                    <FontAwesomeIcon icon={faFilePdf} className="mr-2" />
+                    <FontAwesomeIcon
+                      icon={faFilePdf}
+                      fixedWidth
+                      className="mr-2"
+                    />
                     <span className="text-royal-500">
                       Anti-doping verklaring
                     </span>
@@ -353,7 +429,11 @@ const IndexPage = () => (
                     className="flex items-baseline"
                     href="https://www.rbihf.be/"
                   >
-                    <FontAwesomeIcon icon={faFileAlt} className="mr-2" />
+                    <FontAwesomeIcon
+                      icon={faFileAlt}
+                      fixedWidth
+                      className="mr-2"
+                    />
                     <span className="text-royal-500">Medisch attest RBIHF</span>
                   </a>
                 </li>
@@ -390,7 +470,11 @@ const IndexPage = () => (
                     className="flex items-baseline"
                     href="forms/Haskey_Inschrijving.pdf"
                   >
-                    <FontAwesomeIcon icon={faFilePdf} className="mr-2" />
+                    <FontAwesomeIcon
+                      icon={faFilePdf}
+                      fixedWidth
+                      className="mr-2"
+                    />
                     <span className="text-royal-500">Inschrijving</span>
                   </a>
                 </li>
@@ -399,7 +483,11 @@ const IndexPage = () => (
                     className="flex items-baseline"
                     href="forms/Haskey_Huishoudelijk reglement.pdf"
                   >
-                    <FontAwesomeIcon icon={faFilePdf} className="mr-2" />
+                    <FontAwesomeIcon
+                      icon={faFilePdf}
+                      fixedWidth
+                      className="mr-2"
+                    />
                     <span className="text-royal-500">
                       Huishoudelijk reglement
                     </span>
@@ -410,16 +498,20 @@ const IndexPage = () => (
                     className="flex items-baseline"
                     href="forms/Haskey_Medisch Attest_DINOZ.pdf"
                   >
-                    <FontAwesomeIcon icon={faFilePdf} className="mr-2" />
+                    <FontAwesomeIcon
+                      icon={faFilePdf}
+                      fixedWidth
+                      className="mr-2"
+                    />
                     <span className="text-royal-500">Medisch attest Dinoz</span>
                   </a>
                 </li>
                 <li className="mt-2 flex items-baseline">
-                  <FontAwesomeIcon icon={faFile} className="mr-2" />
+                  <FontAwesomeIcon icon={faFile} fixedWidth className="mr-2" />
                   <span>Kopie identiteitskaart (voor en achter)</span>
                 </li>
                 <li className="mt-2 flex items-baseline">
-                  <FontAwesomeIcon icon={faFile} className="mr-2" />
+                  <FontAwesomeIcon icon={faFile} fixedWidth className="mr-2" />
                   <span>Pasfoto</span>
                 </li>
               </ul>

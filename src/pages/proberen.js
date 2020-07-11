@@ -9,25 +9,25 @@ const IndexPage = () => (
       <h2 className="text-lg font-semibold">Wat heb je nodig?</h2>
       <ul>
         <li className="mt-2 flex items-baseline">
-          <FontAwesomeIcon icon={faCheck} className="mr-2 text-royal-500" />
+          <FontAwesomeIcon icon={faCheck} fixedWidth className="mr-2 text-royal-500" />
           <span>Schaatsen (of doorgeven welke maat je hebt)</span>
         </li>
         <li className="mt-2 flex items-baseline">
-          <FontAwesomeIcon icon={faCheck} className="mr-2 text-royal-500" />
+          <FontAwesomeIcon icon={faCheck} fixedWidth className="mr-2 text-royal-500" />
           <span>Helm (een fietshelm of skatehelm is goed)</span>
         </li>
         <li className="mt-2 flex items-baseline">
-          <FontAwesomeIcon icon={faCheck} className="mr-2 text-royal-500" />
+          <FontAwesomeIcon icon={faCheck} fixedWidth className="mr-2 text-royal-500" />
           <span>Handschoenen</span>
         </li>
         <li className="mt-2 flex items-baseline">
-          <FontAwesomeIcon icon={faCheck} className="mr-2 text-royal-500" />
+          <FontAwesomeIcon icon={faCheck} fixedWidth className="mr-2 text-royal-500" />
           <span>
             Elleboog en kniebescherming is niet verplicht maar wel handig
           </span>
         </li>
         <li className="mt-2 flex items-baseline">
-          <FontAwesomeIcon icon={faCheck} className="mr-2 text-royal-500" />
+          <FontAwesomeIcon icon={faCheck} fixedWidth className="mr-2 text-royal-500" />
           <span>Sportieve kleding, geen skipak want dat is veel te warm</span>
         </li>
       </ul>
@@ -69,19 +69,19 @@ const IndexPage = () => (
       </p>
       <ul>
         <li className="mt-2 flex items-baseline">
-          <FontAwesomeIcon icon={faCheck} className="mr-2 text-royal-500" />
+          <FontAwesomeIcon icon={faCheck} fixedWidth className="mr-2 text-royal-500" />
           <span>Je naam</span>
         </li>
         <li className="mt-2 flex items-baseline">
-          <FontAwesomeIcon icon={faCheck} className="mr-2 text-royal-500" />
+          <FontAwesomeIcon icon={faCheck} fixedWidth className="mr-2 text-royal-500" />
           <span>Je leeftijd</span>
         </li>
         <li className="mt-2 flex items-baseline">
-          <FontAwesomeIcon icon={faCheck} className="mr-2 text-royal-500" />
+          <FontAwesomeIcon icon={faCheck} fixedWidth className="mr-2 text-royal-500" />
           <span>Op welke datum je wil komen</span>
         </li>
         <li className="mt-2 flex items-baseline">
-          <FontAwesomeIcon icon={faCheck} className="mr-2 text-royal-500" />
+          <FontAwesomeIcon icon={faCheck} fixedWidth className="mr-2 text-royal-500" />
           <span>En je schoenmaat als je zelf geen schaatsen hebt</span>
         </li>
       </ul>
