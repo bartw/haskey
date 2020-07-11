@@ -550,6 +550,20 @@ const Inschrijven = () => (
         </div>
       </div>
     </section>
+
+    <section className="mb-6">
+      <h2 className="text-lg font-semibold">Rekeningnummer</h2>
+
+      <div className="mt-4">
+        <h3 className="font-semibold">IBAN</h3>
+        <div className="text-lg">BE88 3630 6074 1541</div>
+      </div>
+      
+      <div className="mt-4">
+        <h3 className="font-semibold">BIC</h3>
+        <div className="text-lg">BBRUBEBB</div>
+      </div>
+    </section>
   </PageLayout>
 );
 
