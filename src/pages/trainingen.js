@@ -3,210 +3,112 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarCheck } from "@fortawesome/free-regular-svg-icons";
 import PageLayout from "../components/page-layout";
 
+const PRACTICES = [
+  {
+    title: "Jeugd",
+    groups: [
+      {
+        name: "U8",
+        practices: [
+          { day: "Woensdag", time: "17:00 - 18:00" },
+          { day: "Zondag", time: "08:30 - 09:30" },
+        ],
+      },
+      {
+        name: "U10",
+        practices: [
+          { day: "Woensdag", time: "17:00 - 18:00" },
+          { day: "Zondag", time: "08:30 - 09:30" },
+        ],
+      },
+      {
+        name: "U12",
+        practices: [
+          { day: "Woensdag", time: "17:00 - 18:00" },
+          { day: "Donderdag", time: "17:45 - 18:45" },
+        ],
+      },
+      {
+        name: "U14",
+        practices: [
+          { day: "Woensdag", time: "18:00 - 19:00" },
+          { day: "Donderdag", time: "17:45 - 18:45" },
+        ],
+      },
+      {
+        name: "U16",
+        practices: [
+          { day: "Woensdag", time: "18:00 - 19:00" },
+          { day: "Donderdag", time: "17:45 - 18:45" },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Senioren",
+    groups: [
+      {
+        name: "Divisie 2",
+        practices: [
+          { day: "Dinsdag", time: "21:15 - 22:15" },
+          { day: "Donderdag", time: "20:45 - 21:45" },
+        ],
+      },
+      {
+        name: "Dinoz",
+        practices: [
+          { day: "Maandag", time: "21:15 - 22:15" },
+          { day: "Donderdag", time: "22:00 - 23:00" },
+        ],
+      },
+      {
+        name: "ijshockij Hasselt",
+        practices: [{ day: "Woensdag", time: "22:15 - 23:15" }],
+      },
+    ],
+  },
+  {
+    title: "Andere",
+    groups: [
+      {
+        name: "Rookies",
+        practices: [{ day: "Zondag", time: "08:30 - 09:30" }],
+      },
+      {
+        name: "Goalies",
+        practices: [{ day: "Zondag", time: "08:30 - 09:30" }],
+      },
+    ],
+  },
+];
+
 const Trainingen = () => (
   <PageLayout title="Trainingen">
-    <section>
-      <h2 className="text-lg font-semibold">Jeugd</h2>
-      <ul className="mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <li>
-          <h3 className="font-semibold">U8</h3>
-          <ul>
-            <li className="mt-2">
-              <FontAwesomeIcon
-                icon={faCalendarCheck}
-                fixedWidth
-                className="mr-2 text-royal-500"
-              />
-              <span>Woensdag: 17:00 - 18:00</span>
+    {PRACTICES.map(({ title, groups }, index) => (
+      <section key={title} className={index === 0 ? null : "mt-8"}>
+        <h2 className="text-lg font-semibold">{title}</h2>
+        <ul className="mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {groups.map(({ name, practices }) => (
+            <li key={name}>
+              <h3 className="font-semibold">{name}</h3>
+              <ul>
+                {practices.map(({ day, time }) => (
+                  <li key={`${day}${time}`} className="mt-2 flex items-baseline">
+                    <FontAwesomeIcon
+                      icon={faCalendarCheck}
+                      fixedWidth
+                      className="mr-2 text-royal-500"
+                    />
+                    <span className="w-24 mr-2">{day}:</span>
+                    <span>{time}</span>
+                  </li>
+                ))}
+              </ul>
             </li>
-            <li className="mt-2">
-              <FontAwesomeIcon
-                icon={faCalendarCheck}
-                fixedWidth
-                className="mr-2 text-royal-500"
-              />
-              <span>Zondag: 08:30 - 09:30</span>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h3 className="font-semibold">U10</h3>
-          <ul>
-            <li className="mt-2">
-              <FontAwesomeIcon
-                icon={faCalendarCheck}
-                fixedWidth
-                className="mr-2 text-royal-500"
-              />
-              <span>Woensdag: 17:00 - 18:00</span>
-            </li>
-            <li className="mt-2">
-              <FontAwesomeIcon
-                icon={faCalendarCheck}
-                fixedWidth
-                className="mr-2 text-royal-500"
-              />
-              <span>Zondag: 08:30 - 09:30</span>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h3 className="font-semibold">U12</h3>
-          <ul>
-            <li className="mt-2">
-              <FontAwesomeIcon
-                icon={faCalendarCheck}
-                fixedWidth
-                className="mr-2 text-royal-500"
-              />
-              <span>Woensdag: 17:00 - 18:00</span>
-            </li>
-            <li className="mt-2">
-              <FontAwesomeIcon
-                icon={faCalendarCheck}
-                fixedWidth
-                className="mr-2 text-royal-500"
-              />
-              <span>Donderdag: 17:45 - 18:45</span>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h3 className="font-semibold">U14</h3>
-          <ul>
-            <li className="mt-2">
-              <FontAwesomeIcon
-                icon={faCalendarCheck}
-                fixedWidth
-                className="mr-2 text-royal-500"
-              />
-              <span>Woensdag: 18:00 - 19:00</span>
-            </li>
-            <li className="mt-2">
-              <FontAwesomeIcon
-                icon={faCalendarCheck}
-                fixedWidth
-                className="mr-2 text-royal-500"
-              />
-              <span>Donderdag: 17:45 - 18:45</span>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h3 className="font-semibold">U16</h3>
-          <ul>
-            <li className="mt-2">
-              <FontAwesomeIcon
-                icon={faCalendarCheck}
-                fixedWidth
-                className="mr-2 text-royal-500"
-              />
-              <span>Woensdag: 18:00 - 19:00</span>
-            </li>
-            <li className="mt-2">
-              <FontAwesomeIcon
-                icon={faCalendarCheck}
-                fixedWidth
-                className="mr-2 text-royal-500"
-              />
-              <span>Donderdag: 17:45 - 18:45</span>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-    <section className="mt-8">
-      <h2 className="text-lg font-semibold">Senioren</h2>
-      <ul className="mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <li>
-          <h3 className="font-semibold">Divisie 2</h3>
-          <ul>
-            <li className="mt-2">
-              <FontAwesomeIcon
-                icon={faCalendarCheck}
-                fixedWidth
-                className="mr-2 text-royal-500"
-              />
-              <span>Dinsdag: 21:15 - 22:15</span>
-            </li>
-            <li className="mt-2">
-              <FontAwesomeIcon
-                icon={faCalendarCheck}
-                fixedWidth
-                className="mr-2 text-royal-500"
-              />
-              <span>Donderdag: 20:45 - 21:45</span>
-            </li>
-          </ul>
-        </li>
-
-        <li>
-          <h3 className="font-semibold">Dinoz</h3>
-          <ul>
-            <li className="mt-2">
-              <FontAwesomeIcon
-                icon={faCalendarCheck}
-                fixedWidth
-                className="mr-2 text-royal-500"
-              />
-              <span>Maandag: 21:15 - 22:15</span>
-            </li>
-            <li className="mt-2">
-              <FontAwesomeIcon
-                icon={faCalendarCheck}
-                fixedWidth
-                className="mr-2 text-royal-500"
-              />
-              <span>Donderdag: 22:00 - 23:00</span>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h3 className="font-semibold">ijshockij Hasselt</h3>
-          <ul>
-            <li className="mt-2">
-              <FontAwesomeIcon
-                icon={faCalendarCheck}
-                fixedWidth
-                className="mr-2 text-royal-500"
-              />
-              <span>Woensdag: 22:15 - 23:15</span>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-    <section className="mt-8">
-      <h2 className="text-lg font-semibold">Andere</h2>
-      <ul className="mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <li>
-          <h3 className="font-semibold">Rookies</h3>
-          <ul>
-            <li className="mt-2">
-              <FontAwesomeIcon
-                icon={faCalendarCheck}
-                fixedWidth
-                className="mr-2 text-royal-500"
-              />
-              <span>Zondag: 08:30 - 09:30</span>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h3 className="font-semibold">Goalies</h3>
-          <ul>
-            <li className="mt-2">
-              <FontAwesomeIcon
-                icon={faCalendarCheck}
-                fixedWidth
-                className="mr-2 text-royal-500"
-              />
-              <span>Zondag: 08:30 - 09:30</span>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </section>
+          ))}
+        </ul>
+      </section>
+    ))}
   </PageLayout>
 );
 
