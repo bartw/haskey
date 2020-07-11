@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-regular-svg-icons";
 import PageLayout from "../components/page-layout";
 
-const IndexPage = () => (
+const Inschrijven = () => (
   <PageLayout title="Inschrijven">
     <section className="mb-6">
       <h2 className="text-lg font-semibold">Starters</h2>
@@ -553,4 +553,4 @@ const IndexPage = () => (
   </PageLayout>
 );
 
-export default IndexPage;
+export default Inschrijven;

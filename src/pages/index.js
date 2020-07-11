@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import haskeyLogo from "../images/haskey.svg";
 
-const IndexPage = () => (
+const Home = () => (
   <Layout>
     <SEO title="Home" />
     <main className="flex flex-col h-screen items-center justify-center">
@@ -15,4 +15,4 @@ const IndexPage = () => (
   </Layout>
 );
 
-export default IndexPage;
+export default Home;

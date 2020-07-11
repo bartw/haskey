@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarCheck } from "@fortawesome/free-regular-svg-icons";
 import PageLayout from "../components/page-layout";
 
-const IndexPage = () => (
+const Trainingen = () => (
   <PageLayout title="Trainingen">
     <section>
       <h2 className="text-lg font-semibold">Jeugd</h2>
@@ -210,4 +210,4 @@ const IndexPage = () => (
   </PageLayout>
 );
 
-export default IndexPage;
+export default Trainingen;

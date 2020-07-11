@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt, faCheck } from "@fortawesome/free-solid-svg-icons";
 import PageLayout from "../components/page-layout";
 
-const IndexPage = () => (
+const Proberen = () => (
   <PageLayout title="Proberen">
     <section className="mb-6">
       <h2 className="text-lg font-semibold">Wat heb je nodig?</h2>
@@ -89,4 +89,4 @@ const IndexPage = () => (
   </PageLayout>
 );
 
-export default IndexPage;
+export default Proberen;
