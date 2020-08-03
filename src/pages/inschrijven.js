@@ -496,7 +496,7 @@ const Inschrijven = () => (
                 <li className="mt-2">
                   <a
                     className="flex items-baseline"
-                    href="forms/Haskey_Medisch Attest_DINOZ.pdf"
+                    href="forms/Haskey_Medisch_Attest_DINOZ.pdf"
                   >
                     <FontAwesomeIcon
                       icon={faFilePdf}
