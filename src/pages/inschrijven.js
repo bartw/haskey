@@ -98,16 +98,11 @@ const Inschrijven = () => (
 
       <div className="md:grid md:grid-cols-2 md:gap-16">
         <div className="mt-6">
-          <h3 className="font-semibold">&lt; 2011</h3>
+          <h3 className="font-semibold">&lt; 2012</h3>
           <h4 className="text-xs text-royal-700">U8 & U10</h4>
           <div className="mt-4 flex">
             <div>
               <div className="w-32 border-2 border-royal-900 rounded shadow p-2">
-                <div className="text-xs text-royal-700">Bestaande leden:</div>
-                <div className="text-lg">€ 410</div>
-              </div>
-              <div className="mt-4 w-32 border-2 border-royal-900 rounded shadow p-2">
-                <div className="text-xs text-royal-700">Nieuwe leden:</div>
                 <div className="text-lg">€ 435</div>
               </div>
             </div>
@@ -161,16 +156,11 @@ const Inschrijven = () => (
         </div>
 
         <div className="mt-6">
-          <h3 className="font-semibold">2010 - 2009</h3>
+          <h3 className="font-semibold">2011 - 2010</h3>
           <h4 className="text-xs text-royal-700">U12</h4>
           <div className="mt-4 flex">
             <div>
               <div className="w-32 border-2 border-royal-900 rounded shadow p-2">
-                <div className="text-xs text-royal-700">Bestaande leden:</div>
-                <div className="text-lg">€ 465</div>
-              </div>
-              <div className="mt-4 w-32 border-2 border-royal-900 rounded shadow p-2">
-                <div className="text-xs text-royal-700">Nieuwe leden:</div>
                 <div className="text-lg">€ 490</div>
               </div>
             </div>
@@ -224,16 +214,11 @@ const Inschrijven = () => (
         </div>
 
         <div className="mt-6">
-          <h3 className="font-semibold">2008 - 2007</h3>
+          <h3 className="font-semibold">2009 - 2008</h3>
           <h4 className="text-xs text-royal-700">U14</h4>
           <div className="mt-4 flex">
             <div>
               <div className="w-32 border-2 border-royal-900 rounded shadow p-2">
-                <div className="text-xs text-royal-700">Bestaande leden:</div>
-                <div className="text-lg">€ 520</div>
-              </div>
-              <div className="mt-4 w-32 border-2 border-royal-900 rounded shadow p-2">
-                <div className="text-xs text-royal-700">Nieuwe leden:</div>
                 <div className="text-lg">€ 545</div>
               </div>
             </div>
@@ -287,17 +272,85 @@ const Inschrijven = () => (
         </div>
 
         <div className="mt-6">
-          <h3 className="font-semibold">2006 - 2005</h3>
+          <h3 className="font-semibold">2007 - 2006</h3>
           <h4 className="text-xs text-royal-700">U16</h4>
           <div className="mt-4 flex">
             <div>
               <div className="w-32 border-2 border-royal-900 rounded shadow p-2">
-                <div className="text-xs text-royal-700">Bestaande leden:</div>
-                <div className="text-lg">€ 550</div>
-              </div>
-              <div className="mt-4 w-32 border-2 border-royal-900 rounded shadow p-2">
-                <div className="text-xs text-royal-700">Nieuwe leden:</div>
                 <div className="text-lg">€ 575</div>
+              </div>
+            </div>
+            <div className="ml-8 sm:ml-16 text-sm">
+              <h4>Documenten:</h4>
+              <ul>
+                <li className="mt-2">
+                  <a
+                    className="flex items-baseline"
+                    href="forms/Haskey_Inschrijving.pdf"
+                  >
+                    <FontAwesomeIcon
+                      icon={faFilePdf}
+                      fixedWidth
+                      className="mr-2"
+                    />
+                    <span className="text-royal-500">Inschrijving</span>
+                  </a>
+                </li>
+                <li className="mt-2">
+                  <a
+                    className="flex items-baseline"
+                    href="forms/Haskey_Huishoudelijk reglement.pdf"
+                  >
+                    <FontAwesomeIcon
+                      icon={faFilePdf}
+                      fixedWidth
+                      className="mr-2"
+                    />
+                    <span className="text-royal-500">
+                      Huishoudelijk reglement
+                    </span>
+                  </a>
+                </li>
+                <li className="mt-2">
+                  <a
+                    className="flex items-baseline"
+                    href="forms/Haskey_Antidopingverklaring.pdf"
+                  >
+                    <FontAwesomeIcon
+                      icon={faFilePdf}
+                      fixedWidth
+                      className="mr-2"
+                    />
+                    <span className="text-royal-500">
+                      Anti-doping verklaring
+                    </span>
+                  </a>
+                </li>
+                <li className="mt-2">
+                  <a
+                    className="flex items-baseline"
+                    href="https://www.rbihf.be/"
+                  >
+                    <FontAwesomeIcon
+                      icon={faFileAlt}
+                      fixedWidth
+                      className="mr-2"
+                    />
+                    <span className="text-royal-500">Medisch attest RBIHF</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-6">
+          <h3 className="font-semibold">2005 - 2003</h3>
+          <h4 className="text-xs text-royal-700">U19</h4>
+          <div className="mt-4 flex">
+            <div>
+              <div className="w-32 border-2 border-royal-900 rounded shadow p-2">
+                <div className="text-lg">€ 635</div>
               </div>
             </div>
             <div className="ml-8 sm:ml-16 text-sm">
@@ -370,11 +423,6 @@ const Inschrijven = () => (
           <div className="mt-4 flex">
             <div>
               <div className="w-32 border-2 border-royal-900 rounded shadow p-2">
-                <div className="text-xs text-royal-700">Bestaande leden:</div>
-                <div className="text-lg">€ 610</div>
-              </div>
-              <div className="mt-4 w-32 border-2 border-royal-900 rounded shadow p-2">
-                <div className="text-xs text-royal-700">Nieuwe leden:</div>
                 <div className="text-lg">€ 635</div>
               </div>
             </div>
@@ -454,11 +502,6 @@ const Inschrijven = () => (
           <div className="mt-4 flex">
             <div>
               <div className="w-32 border-2 border-royal-900 rounded shadow p-2">
-                <div className="text-xs text-royal-700">Bestaande leden:</div>
-                <div className="text-lg">€ 485</div>
-              </div>
-              <div className="mt-4 w-32 border-2 border-royal-900 rounded shadow p-2">
-                <div className="text-xs text-royal-700">Nieuwe leden:</div>
                 <div className="text-lg">€ 510</div>
               </div>
             </div>
@@ -556,12 +599,7 @@ const Inschrijven = () => (
 
       <div className="mt-4">
         <h3 className="font-semibold">IBAN</h3>
-        <div className="text-lg">BE88 3630 6074 1541</div>
-      </div>
-      
-      <div className="mt-4">
-        <h3 className="font-semibold">BIC</h3>
-        <div className="text-lg">BBRUBEBB</div>
+        <div className="text-lg">BE12 7512 1124 2192</div>
       </div>
     </section>
   </PageLayout>
