@@ -98,7 +98,7 @@ const Inschrijven = () => (
 
       <div className="md:grid md:grid-cols-2 md:gap-16">
         <div className="mt-6">
-          <h3 className="font-semibold">&lt; 2012</h3>
+          <h3 className="font-semibold">&gt; 2011</h3>
           <h4 className="text-xs text-royal-700">U8 & U10</h4>
           <div className="mt-4 flex">
             <div>
