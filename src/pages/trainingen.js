@@ -11,21 +11,21 @@ const PRACTICES = [
         name: "U8",
         practices: [
           { day: "Woensdag", time: "17:00 - 18:00" },
-          { day: "Zondag", time: "08:30 - 09:30" },
+          { day: "Zondag", time: "08:45 - 09:45" },
         ],
       },
       {
         name: "U10",
         practices: [
           { day: "Woensdag", time: "17:00 - 18:00" },
-          { day: "Zondag", time: "08:30 - 09:30" },
+          { day: "Zondag", time: "08:45 - 09:45" },
         ],
       },
       {
         name: "U12",
         practices: [
           { day: "Woensdag", time: "17:00 - 18:00" },
-          { day: "Donderdag", time: "17:45 - 18:45" },
+          { day: "Zondag", time: "08:45 - 09:45" },
         ],
       },
       {
@@ -50,14 +50,14 @@ const PRACTICES = [
       {
         name: "Divisie 2",
         practices: [
-          { day: "Dinsdag", time: "21:15 - 22:15" },
+          { day: "Dinsdag", time: "21:00 - 22:00" },
           { day: "Donderdag", time: "20:45 - 21:45" },
         ],
       },
       {
         name: "Dinoz",
         practices: [
-          { day: "Maandag", time: "21:15 - 22:15" },
+          { day: "Maandag", time: "21:30 - 22:30" },
           { day: "Donderdag", time: "22:00 - 23:00" },
         ],
       },
@@ -72,11 +72,7 @@ const PRACTICES = [
     groups: [
       {
         name: "Rookies",
-        practices: [{ day: "Zondag", time: "08:30 - 09:30" }],
-      },
-      {
-        name: "Goalies",
-        practices: [{ day: "Zondag", time: "08:30 - 09:30" }],
+        practices: [{ day: "Zondag", time: "08:45 - 09:45" }],
       },
     ],
   },
@@ -93,7 +89,10 @@ const Trainingen = () => (
               <h3 className="font-semibold">{name}</h3>
               <ul>
                 {practices.map(({ day, time }) => (
-                  <li key={`${day}${time}`} className="mt-2 flex items-baseline">
+                  <li
+                    key={`${day}${time}`}
+                    className="mt-2 flex items-baseline"
+                  >
                     <FontAwesomeIcon
                       icon={faCalendarCheck}
                       fixedWidth
