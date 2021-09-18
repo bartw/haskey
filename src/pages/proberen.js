@@ -35,10 +35,10 @@ const Proberen = () => (
     <section className="mb-6">
       <h2 className="text-lg font-semibold">Wanneer?</h2>
       <p className="mt-2">
-        Je mag GRATIS 3 maal een uur meetrainen op zondag van 08:30 tot 09:30.
+        Je mag GRATIS 3 maal een uur meetrainen op zondag van 08:45 tot 09:45.
       </p>
       <p className="mt-2">
-        Je kan best om 08:00 op de schaatsbaan zijn zodat je tijd hebt om je om
+        Je kan best om 08:15 op de schaatsbaan zijn zodat je tijd hebt om je om
         te kleden en een stick te kiezen.
       </p>
     </section>
