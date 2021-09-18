@@ -37,7 +37,7 @@ const PageLayout = ({ title, children }) => (
         </a>
       </div>
       <div className="mt-4 text-center text-sm">
-        © 1972 - 2020 Haskey Hasselt
+        © 1972 - 2021 Haskey Hasselt
       </div>
     </footer>
   </Layout>
